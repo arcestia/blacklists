@@ -1,0 +1,61 @@
+name: Combined Actions
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  Generate-Blacklist:
+    runs-on: ubuntu-latest
+    steps:
+      - run: git config --global user.email "fabrizio.salmi@gmail.com"
+      - run: git config --global user.name "fabriziosalmi"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          ref: main
+      - name: Generate blacklist
+        run: sudo /bin/bash generate_fqdn.sh
+      - name: Refresh repository
+        run: git pull https://fabriziosalmi:${{ secrets.TOKEN }}@github.com/fabriziosalmi/blacklists
+      - name: Add updated blacklist to repository
+        run: git add all.fqdn.blacklist.tar.gz && git commit -m "last update"
+      - name: Push to repository
+        run: git push https://fabriziosalmi:${{ secrets.TOKEN }}@github.com/fabriziosalmi/blacklists
+
+  Create-release:
+    needs: Generate-Blacklist
+    runs-on: ubuntu-latest
+    steps:
+      - run: git config --global user.email "fabrizio.salmi@gmail.com"
+      - run: git config --global user.name "fabriziosalmi"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          ref: main
+      # Your steps for creating GitHub release here...
+
+  Deploy:
+    needs: Generate-Blacklist
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          ref: main
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
