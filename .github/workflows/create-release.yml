@@ -14,12 +14,13 @@ jobs:
     runs-on: ubuntu-latest  # Change this back to self-hosted once you confirm it works
 
     steps:
+    - run: git config --global user.email "fabrizio.salmi@gmail.com"
+    - run: git config --global user.name "fabriziosalmi"
     - name: Check out repository code
-      uses: actions/checkout@v2  # Change this to a version you know is stable
+      uses: actions/checkout@v3
       with:
-        fetch-depth: 1
+        fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
         ref: main
-
     - name: Delete old 'latest' tag (locally and remotely)
       run: |
         git tag -d latest || echo "Local tag not found, proceeding..."
