@@ -4,10 +4,6 @@ _"Building a service on top of a regularly updated blacklist can provide immense
 
 ![blacklist workflow](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate_fqdn.yml/badge.svg)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/fabriziosalmi/blacklists/main)
-![CodeQL workflow](https://github.com/fabriziosalmi/blacklists/actions/workflows/codeql.yml/badge.svg)
-[![GitHub release](https://github.com/fabriziosalmi/blacklists/actions/workflows/create-release.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/create-release.yml)
-![Pages workflow](https://github.com/fabriziosalmi/blacklists/actions/workflows/deploy-github-pages.yml/badge.svg)
-
 
 ## Access the Blacklist
 
