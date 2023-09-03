@@ -3,10 +3,8 @@ name: GitHub Pages
 
 
 on:
-  push:
-    branches: [ main/master ]
-    paths:
-      - 'all.fqdn.blacklist.tar.gz'
+  schedule:
+    - cron: '9 * * * *'
 
   workflow_dispatch:
 
