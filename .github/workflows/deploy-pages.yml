@@ -4,8 +4,7 @@ name: GitHub Pages
 
 on:
   push:
-    branches:
-     - main
+    branches: [ main/master ]
     paths:
       - 'all.fqdn.blacklist.tar.gz'
 
@@ -37,6 +36,7 @@ jobs:
         with:
           fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
           ref: main
+          token: ${{ secrets.PAT }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
