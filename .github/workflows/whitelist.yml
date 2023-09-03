@@ -29,4 +29,4 @@ jobs:
     - name: Add updated blacklist to repository
       run: git add whitelist.txt && git commit -m "whitelist update" 
     - name: Push to repository
-      run: git push https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists
+      run: git push https://fabriziosalmi:{{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
