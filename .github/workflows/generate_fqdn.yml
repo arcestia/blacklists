@@ -19,11 +19,12 @@ jobs:
         with:
           fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
           ref: main
+          token: ${{ secrets.PAT }}
       - name: Generate blacklist
         run: sudo /bin/bash generate_fqdn.sh
       - name: Refresh repository
-        run: git pull https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists
+        run: git pull https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
       - name: Add updated blacklist to repository
         run: git add all.fqdn.blacklist.tar.gz && git commit -m "last update" 
       - name: Push to repository
-        run: git push https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists
+        run: git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
