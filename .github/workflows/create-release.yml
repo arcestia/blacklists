@@ -3,35 +3,39 @@ name: GitHub release
 on:
   push:
     branches:
-     - main
+      - main
     paths:
       - 'all.fqdn.blacklist.tar.gz'
 
   workflow_dispatch:
-  
+
 jobs:
   Create-release:
-    runs-on: self-hosted
-    #  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Change this back to self-hosted once you confirm it works
 
     steps:
     - name: Check out repository code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2  # Change this to a version you know is stable
       with:
-        fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
+        fetch-depth: 1
         ref: main
 
-    - name: Generate tag name
-      id: generate_tag
+    - name: Delete old 'latest' tag (locally and remotely)
       run: |
-        echo "TAG_NAME=$(date +'%Y%m%d%H%M%S')-$(echo ${{ github.sha }} | cut -c 1-6)" >> $GITHUB_ENV
-
+        git tag -d latest || echo "Local tag not found, proceeding..."
+        git push --delete origin latest || echo "Remote tag not found, proceeding..."
+        
+    - name: Create new 'latest' tag
+      run: |
+        git tag -fa latest -m "Latest release"
+        git push origin main --tags --force  # Force is needed to overwrite the existing 'latest' tag
+        
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ env.TAG_NAME }}
-        release_name: "Domains blacklist"  # Changed this line
+        tag_name: latest
+        release_name: "Domains blacklist"
         body: Auto-generated release from GitHub Actions.
         draft: false
         prerelease: false
@@ -46,5 +50,7 @@ jobs:
         asset_path: ./all.fqdn.blacklist.tar.gz
         asset_name: latest.tar.gz
         asset_content_type: application/gzip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
