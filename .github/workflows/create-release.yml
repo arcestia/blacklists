@@ -2,8 +2,7 @@ name: GitHub release
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main/master ]
     paths:
       - 'all.fqdn.blacklist.tar.gz'
 
@@ -21,6 +20,7 @@ jobs:
       with:
         fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
         ref: main
+        token: ${{ secrets.PAT }}
     - name: Delete old 'latest' tag (locally and remotely)
       run: |
         git tag -d latest || echo "Local tag not found, proceeding..."
@@ -52,4 +52,4 @@ jobs:
         asset_name: latest.tar.gz
         asset_content_type: application/gzip
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
