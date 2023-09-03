@@ -1,0 +1,28 @@
+name: Generate blacklist
+
+on:
+  # Runs on pushes targeting the default branch
+  schedule:
+    - cron: '0 * * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  Generate-Blacklist:
+    runs-on: ubuntu-latest
+    steps:
+      - run: git config --global user.email "fabrizio.salmi@gmail.com"
+      - run: git config --global user.name "fabriziosalmi"
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
+      - name: Generate blacklist
+        run: sudo /bin/bash generate_fqdn.sh
+      - name: Refresh repository
+        run: git pull https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists
+      - name: Add updated blacklist to repository
+        run: git add all.fqdn.blacklist.tar.gz && git commit -m "last update" 
+      - name: Push to repository
+        run: git push https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists

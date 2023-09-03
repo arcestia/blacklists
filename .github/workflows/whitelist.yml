@@ -1,0 +1,31 @@
+name: Whitelist
+
+on:
+  push:
+    branches:
+     - main
+    paths:
+      - 'whitelist.txt'
+
+  workflow_dispatch:
+  
+jobs:
+  update-whitelist:
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: git config --global user.email "fabrizio.salmi@gmail.com"
+    - run: git config --global user.name "fabriziosalmi"
+    - name: Check out repository code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
+        
+    - name: Sort and remove duplicates from whitelist.txt
+      run: |
+        sort -u whitelist.txt -o whitelist.txt
+    - name: Add updated blacklist to repository
+      run: git add whitelist.txt && git commit -m "whitelist update" 
+    - name: Push to repository
+      run: git push https://fabriziosalmi:$TOKEN@github.com/fabriziosalmi/blacklists
