@@ -110,6 +110,7 @@ This project owes its existence to numerous dedicated blacklist creators such as
 - [fruxlabs](https://rescure.fruxlabs.com/)
 - [durablenapkin](https://raw.githubusercontent.com/durablenapkin/scamblocklist/)
 - [digitalside.it](https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt)
+- [malwareworld.com](https://malwareworld.com/))
 
 and many more.
 
