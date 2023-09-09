@@ -46,6 +46,8 @@ For comprehensive protection, I've set up the following configuration:
 
 Client -> uBlock Origin Browser Extension -> Squid Proxy -> DNS Filtering via AdGuard/Pi-Hole -> Upstream DNS on a VPS with the same blacklist loaded
 
+Sincerily the most valuable tester is my wife. If something won't workshe instantly file me a P1 incident ^_^
+
 This setup enables me to examine various behaviors and make daily adjustments to the whole project.
 
 ### Project Aims
