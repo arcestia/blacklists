@@ -32,4 +32,4 @@ jobs:
         git diff
         git add whitelist.txt
         git diff-index --quiet HEAD || git commit -m "Update whitelist.txt"
-        git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+        git push
