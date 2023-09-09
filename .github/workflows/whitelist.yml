@@ -19,7 +19,7 @@ jobs:
         git config --global user.name "GitHub Action"
 
     - name: Check out repository code
-      uses: actions/checkout@v2  # Use v2 which is a newer version than v3
+      uses: actions/checkout@v4  # Use v2 which is a newer version than v3
       with:
         fetch-depth: 0  # Fetch all history so git can detect changes properly
 
