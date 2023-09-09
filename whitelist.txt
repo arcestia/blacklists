@@ -1849,6 +1849,7 @@ www.botvrij.eu
 www.canva.com
 www.change.org.cdn.cloudflare.net
 www.cloud.it
+www.cloudflare.com
 www.dazn.com
 www.facebook.com
 www.fotor.com
