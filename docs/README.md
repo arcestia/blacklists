@@ -33,7 +33,7 @@ https://get.domainsblacklists.com/blacklist.txt
 https://get.domainsblacklists.com/blacklist.txt
 ```
 3. **Go to Tools > Update Gravity and click the Update button**
-
+---
 ### [AdGuard Home](https://adguard.com/it/adguard-home/overview.html)
 1. **Go to Filters**
 2. **Click on Add Blacklist**
@@ -41,7 +41,7 @@ https://get.domainsblacklists.com/blacklist.txt
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
-
+---
 ### [Squid](http://www.squid-cache.org/)
 
 #### Squid configuration for blacklist
@@ -58,6 +58,51 @@ http_access deny blacklist                                  # <= deny acl
 ```
 3. **Restart squid**
 4. **Setup a cronjob to automatically update the blacklist**
+---
+### How to implement the RPZ Blacklist with [BIND9](https://www.isc.org/bind/)
+
+1. **Download the RPZ blacklist**: 
+   
+   Navigate to the repository and download the latest `rpz_blacklist.tar.gz` from the `main` branch.
+
+2. **Extract the blacklist**:
+
+   ```bash
+   tar -xzf rpz_blacklist.tar.gz
+   ```
+
+3. **Configure BIND9**:
+
+   Edit your BIND configuration (often `named.conf` or `named.conf.local`):
+
+   ```bash
+   nano /etc/bind/named.conf.local
+   ```
+
+   Add the following lines:
+
+   ```bash
+   zone "rpz.blacklist" {
+       type master;
+       file "/path/to/your/extracted/rpz_blacklist.txt";
+   };
+
+   options {
+       response-policy { zone "rpz.blacklist"; };
+   };
+   ```
+
+   Ensure you replace `/path/to/your/` with the actual path to the `rpz_blacklist.txt` file.
+
+4. **Reload BIND**:
+
+   ```bash
+   sudo systemctl reload bind9
+   ```
+
+   This will load the new RPZ blacklist, and BIND will start blocking the domains listed in it.
+
+
 
 --- 
 
