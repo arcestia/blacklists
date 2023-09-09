@@ -1,9 +1,11 @@
 name: GitHub Release
 
 on:
-  schedule:
-    - cron: '5 * * * *'
-
+  push:
+    branches:
+      - main
+    paths:
+      - 'all.fqdn.blacklist.tar.gz'
   workflow_dispatch:
 
 jobs:
