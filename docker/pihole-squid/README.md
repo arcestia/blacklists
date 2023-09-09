@@ -1,26 +1,27 @@
-## pihole-squid docker image
+# PiHole-Squid docker image
 
-All-In-one filtering proxy-dns (still testing, use with caution..)
+For more recent versions of Pi-hole, blacklisting is managed through its database (`gravity.db`). Directly modifying the database is possible, but not recommended as a general practice since there are Pi-hole CLI tools that handle this for you.
 
-**Daily Pi-hole blacklist update**
+However, to get a custom list integrated, you can add the list URL to the adlist used by Pi-hole:
 
-Pi-hole itself doesn't readily support fetching external blacklists daily without modifying its internal workings. However, you can still use the cron mechanism.
+1. **Add the custom list to Pi-hole's adlists.**
 
-Inside the pihole container, run:
+Login to the Pi-hole admin console:
+- Go to `Group Management` -> `Adlists`.
+- Add `https://get.domainsblacklists.com/blacklist.txt` as a new list.
+
+2. **Update Gravity Daily**
+
+To update Pi-hole's blocklists daily (which is essentially running `pihole -g` daily):
 
 ```bash
-docker exec -it pihole_container_name /bin/bash
+echo "0 0 * * * root /usr/local/bin/pihole -g" | sudo tee -a /etc/cron.d/pihole
 ```
 
-Then, add a daily cron job:
+This cron job will cause Pi-hole to update its blocklists daily at midnight.
 
-```bash
-echo "0 0 * * * wget -O /etc/pihole/blacklist.txt https://get.domainsblacklists.com/blacklist.txt && pihole restartdns" | crontab -
-```
+If you strictly want to automate the addition of the custom list without going through the web interface, you would have to integrate commands for that in your setup process or script, which might involve directly manipulating the `gravity.db`. This approach is more intricate and requires careful handling to ensure no data corruption occurs.
 
-Remember to replace `pihole_container_name` with the actual name of the pihole container you get from `docker ps`.
+**Final step:**
 
-**Final steps:**
-
-1. Adjust the `squid.conf` as per your requirements and place it inside the `squid` directory.
-2. Run `docker-compose up -d` to start both containers.
+1. Run `docker-compose up -d` to start both containers.
