@@ -22,6 +22,7 @@ Works seamlessly with:
 - [PiHole](https://pi-hole.net/) and [AdGuard Home](https://adguard.com/it/adguard-home/overview.html) DNS filtering applications
 - [Squid](http://www.squid-cache.org/) proxy
 - Firewalls like [nftables](https://github.com/fabriziosalmi/blacklists/blob/main/scripts/nft_blacklist_fqdn.sh) and WAF like [OPNsense](https://docs.opnsense.org/manual/how-tos/proxywebfilter.html)
+- DNS servers like BIND9
   
 ### Features
 - **Hourly Updates**: Stay protected against emerging threats
