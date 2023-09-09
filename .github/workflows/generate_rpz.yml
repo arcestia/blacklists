@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'all.fqdn.blacklist.tar.gz'
+  workflow_dispatch:
 
 jobs:
   generate_rpz:
