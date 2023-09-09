@@ -1,4 +1,4 @@
-This folder contains custom blacklists provided by domainsblacklists.com. 
+This folder contains custom blacklists provided by **domainsblacklists.com**. 
 
 Custom blacklists are automatically integrated into the [main blacklist](https://get.domainsblacklists.com/blacklist.txt). 
 
