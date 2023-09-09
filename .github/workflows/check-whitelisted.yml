@@ -1,0 +1,51 @@
+name: Check Whitelisted Websites
+
+on:
+  push:
+    paths:
+      - 'whitelist.txt'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Check whitelisted websites against DNS family services
+      id: check_urls
+      run: |
+        declare -A UNSAFE_URLS
+
+        while read -r website; do
+          # Check against Quad9
+          if ! nslookup "$website" 9.9.9.9 &>/dev/null; then
+            UNSAFE_URLS["$website"]="${UNSAFE_URLS["$website"]} Quad9"
+          fi
+          
+          # Check against Cloudflare Family Shield
+          if nslookup "$website" 1.1.1.3 | grep -q "0.0.0.0"; then
+            UNSAFE_URLS["$website"]="${UNSAFE_URLS["$website"]} CloudflareFamilyShield"
+          fi
+        done < whitelist.txt
+
+        # Convert associative array to multi-line string for output
+        OUTPUT=""
+        for key in "${!UNSAFE_URLS[@]}"; do
+            OUTPUT+="$key blocked by:${UNSAFE_URLS[$key]}\n"
+        done
+
+        echo "::set-output name=unsafe::$OUTPUT"
+
+    - name: Open an issue if any unsafe URLs are found
+      if: steps.check_urls.outputs.unsafe
+      uses: octokit/request-action@v2.x
+      with:
+        route: POST /repos/{owner}/{repo}/issues
+        owner: ${{ github.repository_owner }}
+        repo: ${{ github.event.repository.name }}
+        title: Unsafe URLs detected in whitelist.txt
+        body: ${{ steps.check_urls.outputs.unsafe }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
