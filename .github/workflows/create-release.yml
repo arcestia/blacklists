@@ -14,7 +14,7 @@ jobs:
     - run: git config --global user.email "fabrizio.salmi@gmail.com"
     - run: git config --global user.name "fabriziosalmi"
     - name: Check out repository code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
         ref: main
