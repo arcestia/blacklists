@@ -134,7 +134,6 @@ curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application
 
 Could be nice if some missions will be achieved:
 
-- Sanitization can be improved
 - Check the web for more blacklists to be aggregated when possible
 - Whitelist content can be improved
 - Adult and newly registered domains are a huge challenge to manage on separate aggregated blacklists, postponed..
