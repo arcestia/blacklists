@@ -1,3 +1,10 @@
+appleid.apple.com
+ax.phobos.apple.com.edgesuite.net
+ocsp.apple.com
+radarsubmissions.apple.com
+news.iadsdk.apple.com
+iadsdk.apple.com
+cf.iadsdk.apple.com
 backblaze.com
 0.client-channel.google.com
 17track.net
