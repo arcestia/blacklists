@@ -119,6 +119,11 @@ For a full list, check the [complete blacklists URLs](https://github.com/fabrizi
 ## Currently testing
 
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
+- Search API
+```
+curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"$DOMAIN\"]}" https://check.domainsblacklists.com/check_domain
+```
+
 - Telegram Bot blacklist checker
 - Notification (Teams via webhook, e-mail, ntfy) if blacklisted
 - Firefox extension site checker
