@@ -19,7 +19,7 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 1  # Get all commits
+        fetch-depth: 1
         ref: main
         token: ${{ secrets.PAT }}
 
@@ -27,7 +27,6 @@ jobs:
     - name: Extract current blacklist.txt
       run: |
         mkdir current
-        git checkout $(echo "${{ steps.find_commits.outputs.commits }}" | awk '{print $1}')
         tar -xzf all.fqdn.blacklist.tar.gz -C current
         mv current/all.fqdn.blacklist current/blacklist.txt
 
@@ -66,5 +65,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Clean up
-      run: |
-        rm -r current
+      run: rm -r current
