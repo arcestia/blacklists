@@ -50,7 +50,7 @@ jobs:
       run: |
         ADDED_COUNT=$(wc -l < added_domains.txt)
         REMOVED_COUNT=$(wc -l < removed_domains.txt)
-        BODY="### Domains Update Summary:\n\n- Added Domains: $ADDED_COUNT\n- Removed Domains: $REMOVED_COUNT"
+        BODY="### Domains Update Summary: Added Domains: $ADDED_COUNT, Removed Domains: $REMOVED_COUNT"
         echo "::set-output name=body::$BODY"
 
     - name: Delete Release if Exists
