@@ -1,12 +1,3 @@
-If you want to delete all releases except for the latest one, you can use a combination of GitHub API and a bash script to achieve this. Here is a GitHub Actions workflow for this purpose:
-
-1. Fetch all the releases from the repository.
-2. Skip the latest one.
-3. Delete the rest.
-
-Here's how you can set this up:
-
-```yaml
 name: Delete All Releases Except Latest
 
 on:
@@ -30,12 +21,3 @@ jobs:
         done
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Make sure to trigger the workflow manually using `workflow_dispatch`, so it doesn't run unintentionally.
-
-Remember:
-1. This action uses `jq` to parse the JSON output from the GitHub API. It's installed by default on the GitHub runners.
-2. Ensure you don't run this workflow unintentionally, as it will delete data.
-3. Always have backups of your data/releases. It's always a good idea before running automated deletion tasks.
-4. This assumes that your releases are ordered with the latest one first, which is the default ordering by GitHub API. If this ever changes (unlikely), the script will need adjustment.
