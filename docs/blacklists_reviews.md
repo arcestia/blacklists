@@ -1,6 +1,6 @@
 # Blacklists reviews
 
-- Blacklists monitor is [here](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists_monitor.md)
+- Blacklists monitor is [here](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists_monitor.md) (I want to move changedetection logic to GitHub)
 - The aim of the review sessions is to mantain a fresh, optimal, useful aggregated blacklist
 - If a blacklist source is not updated in the latest 72 hours will be flagged as "dormient", more time and will be removed from the list
 - If a blacklist raise up again after some time will be carefully reviewed before to be combined
