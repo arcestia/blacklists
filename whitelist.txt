@@ -29,8 +29,10 @@ above.com
 abpvn.com
 abuelos.com
 abuse.ch
+account.activedirectory.windowsazure.com
 account.booking.com
 account.ghost.org
+accounts.accesscontrol.windows.net
 accounts.autodesk.com
 accounts.google.com
 accuweather.com
@@ -57,8 +59,10 @@ addthisevent.com
 adguard.com
 adidas.com
 admin.dc1.computing.cloud.it
+admin.onedrive.com
 admin.services.cloud.it
 admin.typeform.com
+adminwebservice.microsoftonline.com
 adobe.com
 adobe.io
 adp.com
@@ -81,7 +85,9 @@ airbnb.com
 aiv-cdn.net
 aiv-cdn.net.c.footprint.net
 aiv-delivery.net
+ajax.aspnetcdn.com
 ajax.cloudflare.com
+aka.ms
 akadns.net
 akamai-san24.exacttarget.com.edgekey.net
 akamai.com
@@ -89,6 +95,7 @@ akamai.net
 akamaihd.net
 akamaitechnologies.com
 akamaized.net
+albert.apple.com
 alexa.com
 alibaba.com
 alice.it
@@ -102,8 +109,13 @@ amazonvideo.com
 amd.com
 americanexpress.com
 amnesty.org
+amp-api-edge-lb.itunes-apple.com.akadns.net
+amp-api-edge.apps.apple.com
 amp-api-prd.bostonglobe.com
+amp-api-search-edge.apps-lb.itunes-apple.com.akadns.net
+amp-api-search-edge.apps.apple.com
 amplitude.com
+analytics.google.com
 analytics.twitter.com
 analyticsinsights-pa.googleapis.com
 analyticssearch-pa.googleapis.com
@@ -125,9 +137,11 @@ api.chip-secured-download.de
 api.intercom.io
 api.ipify.org
 api.opinary.com
+api.passwordreset.microsoftonline.com
 api.revenuecat.com
 api.rlje.net
 apis.google.com
+apis.live.net
 app-api.ted.com
 app.crowdsec.net
 app.diagrams.net
@@ -177,8 +191,10 @@ audible.com
 audid-api.taobao.com
 audio-ake.spotify.com.edgesuite.net
 audio4-ak.spotify.com.edgesuite.net
+auth.microsoft.com
 auto.netdirector.co.uk
 autodesk.com
+autologon.microsoftazuread-sso.com
 autoscout24.it
 autosprint.it
 avast.com
@@ -186,7 +202,10 @@ avis-verifies.com
 avvenire.it
 aws.amazon.com
 awxcdn.com
+ax.init.itunes.apple.com
+ax.itunes.apple.com
 ax.phobos.apple.com.edgesuite.net
+b.stats.paypal.com
 backblaze.com
 badmojr.github.io
 baihe.com
@@ -202,6 +221,7 @@ bbc.com
 bbs.archlinux.org
 bcee.lu
 bdc2020.o0bc.com
+becws.microsoftonline.com
 bedbathandbeyond.com
 behance.net
 beneficiari.edenred.it
@@ -243,6 +263,8 @@ breitbart.com
 brightcove.map.fastly.net
 brightcove.net
 britannica.com
+browser.events.data.microsoft.com
+browser.pipe.aria.microsoft.com
 browserhow.com
 bufferapp.com
 builtwith.com
@@ -252,14 +274,18 @@ buzzfeed.com
 bydgoszcz.tvp.pl
 c-ctrip.com
 c.amazon-adsystem.com
+c.apple.com
+c.bing.com
 c.disquscdn.com
 c.msn.com
+c.paypal.com
 c.s-microsoft.com
 ca-lb.ultimedia.com
 calciomercato.com
 camera.it
 campaignmanager.netdirector.co.uk
 capi.connatix.com
+captive.apple.com
 car.saturn.de
 carabinieri.it
 cart.cloud.it
@@ -271,6 +297,7 @@ cbslocal.com
 cbsnews.com
 ccf.admeen.org
 ccleaner.com
+ccs.login.microsoftonline.com
 cd-dmgz.bamgrid.com
 cd.connatix.com
 cda.pl
@@ -291,6 +318,7 @@ cdn.jscloudflare.com
 cdn.jsdelivr.net
 cdn.jwplayer.com
 cdn.mediavoice.com
+cdn.onenote.net
 cdn.opecloud.com
 cdn.optimizely.com
 cdn.otstatic.com
@@ -452,6 +480,7 @@ dazn.com
 db.local.clamav.net
 dbl.oisd.nl
 dblmobile.oisd.nl
+dc.services.visualstudio.com
 dcf.espn.com
 dcfdata.espn.com
 dd.tidal.com
@@ -539,6 +568,7 @@ dssott.com
 dssott.com.akamaized.net
 dtioykqj1u8de.cloudfront.net
 dualstack.brightcove.map.fastly.net
+dub.stats.paypal.com
 duckduckgo.com
 duolingo.com
 dvf2rc3rx4ypk.cloudfront.net
@@ -547,6 +577,7 @@ dynu.net
 dynupdate.no-ip.com
 e.reddit.com
 e3489.cd.akamaiedge.net
+e673.dscx.akamaiedge.net
 ea.com
 easybytez.com
 easylist-downloads.adblockplus.org
@@ -620,6 +651,7 @@ faz.sevenval-fit.com
 fda.gov
 fe-lb.tranquilli.org
 federugby.it
+feedbackws.icloud.com
 feedburner.google.com
 feedly.com
 feedproxy.google.com
@@ -778,6 +810,7 @@ googlechrome.github.io
 governo.it
 gp.se
 graph.facebook.com
+graph.microsoft.com
 gravatar.com
 greasyfork.org
 group46.sites.hscoscdn40.net
@@ -786,8 +819,10 @@ groupon.de
 groupon.fr
 groupon.it
 groups.google.com
+gs.apple.com
 gslb-2.demdex.net
 gstatic.com
+gstaticadssl.l.google.com
 gtmetrix.com
 guardian.co.uk
 gutenberg.org
@@ -963,6 +998,7 @@ istat.it
 istockphoto.com
 it.gravatar.com
 itad.linetv.tw
+itunes.apple.com
 itunes.com
 iutoic-dhaka.edu
 ix.de
@@ -1061,6 +1097,7 @@ lodz.tvp.pl
 login.aliexpress.com
 login.microsoftonline.com
 login.teamviewer.com
+login.windows.net
 logincdn.msauth.net
 logroid.github.io
 lonelyplanet.com
@@ -1081,6 +1118,7 @@ macys.com
 madsack-prod-cdn.video-api.arcpublishing.com
 mail.com
 mail.google.com
+mail.protection.outlook.com
 mailchimp.com
 mailerlite.com
 mailtrap.io
@@ -1130,6 +1168,7 @@ meet.jit.si
 mef.gov.it
 mega.co.nz
 mega.nz
+mem.gfx.ms
 menshealth.com
 merriam-webster.com
 mesh.com
@@ -1159,12 +1198,15 @@ mobile-ap.spotify.com
 mobilecrashreporting.googleapis.com
 mongodb.com
 motorsport.com
+mozilla.cloudflare-dns.com
 mozilla.org
 mozillazine.org
 mparticle.map.fastly.net
 mparticle.weather.com
+msftidentity.com
 msftncsi.com
 msh.amazon.co.uk
+msidentity.com
 msmetrics.ws.sonos.com
 msn.com
 mssl.fwmrm.net
@@ -1260,18 +1302,25 @@ oboom.com
 observer.com
 ocs-dl.fra1.cdn.digitaloceanspaces.com
 ocsp.apple.com
+odc.officeapps.live.com
 odcdn.com
 office.com
+office.live.com
 office.net
 office365.com
+officeapps.live.com
 officeclient.microsoft.com
 ohchr.org
 olx.it
 omroepbrabant.bbvms.com
+oneclient.sfx.ms
 onecollector.cloudapp.aria.akadns.net
+onedrive.com
 onedrive.live.com
+onenote.com
 onet.pl
 oneuptime.com
+online.office.com
 open-assistant.io
 open.fm
 open.spotify.com
@@ -1293,6 +1342,9 @@ osnews.com
 otx.alienvault.com
 ouo.io
 outlook.com
+outlook.live.com
+outlook.office.com
+outlook.office365.com
 overseas.edu.lk
 ow.ly
 oxfam.org
@@ -1331,6 +1383,7 @@ philadelphia.cbslocal.com
 philips.com
 phishing.army
 phishing.database
+phobos.apple.com
 php.net
 pi-hole.net
 pi.hole
@@ -1393,11 +1446,13 @@ prisonpolicy.org
 privacyinternational.org
 prnt.sc
 probono.net
+prod.rewardsplatform.microsoft.com
 production-cmp.isgprivacy.cbsi.com
 products.aspose.app
 promodj.com
 propublica.org
 prospekt.aldi-sued.de
+protection.outlook.com
 protezionecivile.it
 protonmail.com
 proxmox.com
@@ -1446,6 +1501,8 @@ reddit.com
 redfin.com
 redhat.com
 redirector.googlevideo.com
+redirector.gvt1.com
+redirector.gvt2.com
 reebok.com
 regione.campania.it
 regione.lazio.it
@@ -1522,6 +1579,7 @@ search.google.com
 searchg2.crownpeak.net
 searchlab.eu
 sears.com
+secure-appldnld.apple.com
 secure.avangate.com
 secure.booking.com
 secure.brightcove.com
@@ -1549,6 +1607,7 @@ servix.idnes.cz
 servizi2.inps.it
 serviziweb2.inps.it
 settings-win.data.microsoft.com
+sf-api-token-service.itunes.apple.com
 shalltry.com
 share-online.biz
 sharepoint.com
@@ -1576,6 +1635,7 @@ small.oisd.nl
 smart.link
 smartforms.ekomi.com
 smp-device-content.apple.com
+smtp.office365.com
 smugmug.com
 snapchat.com
 sni.cdn.manager-magazin.de.c.footprint.net
@@ -1642,6 +1702,7 @@ statics-marketingsites-neu-ms-com.akamaized.net
 staticweb.bankofamerica.com
 staticweb.ecglb.bac.com
 stats.gc.apple.com
+stats.glb.paypal.com
 stats.t-online.de
 status.plex.tv
 steam-chat.com
@@ -1662,6 +1723,7 @@ steamusercontent.com
 steamuserimages-a.akamaihd.net
 steamvideo-a.akamaihd.net
 stopklatka.pl
+storage.live.com
 store.steampowered.com
 streamsb.net
 strefa.fm
@@ -1672,6 +1734,7 @@ subito.it
 support.google.com
 support.honeywellaidc.com
 surveymonkey.com
+svc.ms
 sweclockers.com
 swiftcourrier.com
 symantec.com
@@ -1758,6 +1821,7 @@ tmblr.co
 tmz.com
 tny.cz
 tofukko.r.ribbon.to
+token.safebrowsing.apple
 tomshardware.com
 torrentfreak.com
 tra.scds.pmdstatic.net
@@ -1772,6 +1836,7 @@ tracker.gg
 tracker.scoober.com
 tracking-protection.cdn.mozilla.net
 tracking.dpd.de
+translate.google.com
 travel.latimes.com
 trenitalia.com
 tripadvisor.co.uk
@@ -1899,6 +1964,7 @@ vod.pl
 vod.tvp.pl
 voe.sx
 void.gr
+vortex.data.microsoft.com
 vox.com
 vr-ov-crl.thawte.com
 vulcan.condenastdigital.com
@@ -1921,6 +1987,7 @@ web.archive.org
 web.de
 web.dev
 web.facebook.com
+web.vortex.data.microsoft.com
 web.whatsapp.com
 webadvisorc.rest.gti.mcafee.com
 webcache.googleusercontent.com
@@ -1964,6 +2031,7 @@ wired.com
 wirtualnemedia.pl
 wl.spotify.com
 wnba.com
+wns.windows.com
 wordpress.com
 wordpress.org
 worldjusticeproject.org
@@ -1974,6 +2042,7 @@ ws.sharethis.com
 wtkr.com
 wum97myjdw.ent-cdn.com
 wunderground.com
+www-googletagmanager.l.google.com
 www.3bmeteo.com
 www.agenziaentrate.gov.it
 www.amazon.com
@@ -1994,6 +2063,8 @@ www.fotor.com
 www.fragolalilla.it
 www.gaia.com
 www.google.com
+www.googletagmanager.com
+www.googletagservices.com
 www.infinityfree.com
 www.inps.it
 www.ionos.it
