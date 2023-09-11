@@ -19,7 +19,7 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Get all commits
+        fetch-depth: 1  # Get all commits
         ref: main
         token: ${{ secrets.PAT }}
 
