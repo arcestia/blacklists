@@ -1,4 +1,4 @@
-name: Create Release
+name: Process Blacklist and Create Release
 
 on:
   push:
@@ -19,9 +19,39 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 1
+        fetch-depth: 2  # get current and previous commit
         ref: main
         token: ${{ secrets.PAT }}
+
+    # Extract current blacklist
+    - name: Extract current blacklist.txt
+      run: |
+        mkdir current
+        tar -xzf all.fqdn.blacklist.tar.gz -C current
+        mv current/all.fqdn.blacklist current/blacklist.txt
+
+    # Extract previous blacklist
+    - name: Extract previous blacklist.txt
+      run: |
+        git checkout HEAD^
+        mkdir previous
+        tar -xzf all.fqdn.blacklist.tar.gz -C previous
+        mv previous/all.fqdn.blacklist previous/blacklist.txt
+
+    # Generate lists of added and removed domains
+    - name: Compare blacklists
+      run: |
+        comm -13 previous/blacklist.txt current/blacklist.txt > added_domains.txt
+        comm -23 previous/blacklist.txt current/blacklist.txt > removed_domains.txt
+
+    # Prepare release body
+    - name: Prepare Release Notes
+      id: release_notes
+      run: |
+        ADDED_COUNT=$(wc -l < added_domains.txt)
+        REMOVED_COUNT=$(wc -l < removed_domains.txt)
+        BODY="### Domains Update Summary:\n\n- Added Domains: $ADDED_COUNT\n- Removed Domains: $REMOVED_COUNT"
+        echo "::set-output name=body::$BODY"
 
     - name: Delete Release if Exists
       run: |
@@ -36,33 +66,49 @@ jobs:
           git push --delete origin latest
         fi
 
-    - name: Extract blacklist.txt from tar.gz
-      run: |
-        mkdir -p temp_directory
-        tar -xzf all.fqdn.blacklist.tar.gz -C temp_directory
-        mv temp_directory/all.fqdn.blacklist temp_directory/blacklist.txt
-
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       with:
         tag_name: latest
         release_name: "Domains Blacklist"
-        body: Auto-generated release from GitHub Actions.
+        body: ${{ steps.release_notes.outputs.body }}
         draft: false
         prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
 
-    - name: Upload Release Asset
+    - name: Upload Release Asset (Blacklist)
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./temp_directory/blacklist.txt
+        asset_path: ./current/blacklist.txt
         asset_name: blacklist.txt
         asset_content_type: text/plain
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
 
-    - name: Clean up temporary directory
-      run: rm -r temp_directory
+    - name: Upload Release Asset (Added Domains)
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./added_domains.txt
+        asset_name: added_domains.txt
+        asset_content_type: text/plain
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
+
+    - name: Upload Release Asset (Removed Domains)
+      uses: actions/upload-release-asset@v1
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./removed_domains.txt
+        asset_name: removed_domains.txt
+        asset_content_type: text/plain
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
+
+    - name: Clean up
+      run: |
+        rm -r current previous
+        rm added_domains.txt removed_domains.txt
