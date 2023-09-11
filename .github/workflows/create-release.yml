@@ -22,6 +22,23 @@ jobs:
         ref: main
         token: ${{ secrets.PAT }}
 
+    - name: Delete Release if Exists
+      run: |
+        release_id=$(curl -H "Authorization: token $GITHUB_TOKEN" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
+        if [ "$release_id" != "null" ]; then
+          curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
+
+    - name: Delete Tag if Exists
+      run: |
+        if git show-ref --tags latest; then
+          git push --delete origin latest
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
+
     - name: Create temporary directory
       run: mkdir temp_directory
 
@@ -50,7 +67,6 @@ jobs:
         asset_content_type: text/plain
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
-    
+
     - name: Clean up temporary directory
       run: rm -r temp_directory
-
