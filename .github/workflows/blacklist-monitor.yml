@@ -19,6 +19,10 @@ jobs:
         ref: main
         token: ${{ secrets.PAT }}
 
+    - name: Install dependencies
+      run: |
+        pip install tqdm requests
+
     - name: Check and Update Blacklists
       run: |
         python .github/scripts/check_blacklists.py
