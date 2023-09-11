@@ -67,5 +67,4 @@ jobs:
 
     - name: Clean up
       run: |
-        rm -r current previous
-        rm added_domains.txt removed_domains.txt
+        rm -r current
