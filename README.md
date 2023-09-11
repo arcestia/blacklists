@@ -32,6 +32,10 @@ Works seamlessly with:
 - **Whitelist Capability**: Have more control over what you allow
 - **Local Mirror**: Set up easily using the [Docker image](https://hub.docker.com/repository/docker/fabriziosalmi/blacklists/)
 
+### Whitelist submissions
+
+- **[Submit one or more domains for whitelisting](https://req.domainsblacklists.com/)**
+
 ## Why This Blacklist?
 
 I'm passionate about digital security, and this project is a testament to that commitment. I use this blacklist daily through a series of devices (smartphone, laptop, TV, IoT), allowing me to continually test and refine it. This ensures it remains effective across a range of applications and devices.
