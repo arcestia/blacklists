@@ -4,7 +4,7 @@
 | --- | ------------- |
 | https://github.com/What-Zit-Tooya/Ad-Block/blob/main/Main-Blocklist/Ad-Block-HOSTS.txt | N/A |
 | https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt | N/A |
-| https://hole.cert.pl/domains/domains.txt | Mon, 11 Sep 2023 07:34:04 GMT |
+| https://hole.cert.pl/domains/domains.txt | Mon, 11 Sep 2023 07:39:04 GMT |
 | https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt | Sun, 10 Sep 2023 22:14:57 GMT |
 | https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt | Sun, 10 Sep 2023 22:14:51 GMT |
 | https://hostfiles.frogeye.fr/multiparty-only-trackers-hosts.txt | Sun, 10 Sep 2023 22:15:30 GMT |
@@ -44,7 +44,7 @@
 | https://raw.githubusercontent.com/phishfort/phishfort-lists/master/blacklists/domains.json | N/A |
 | https://raw.githubusercontent.com/stamparm/blackbook/master/blackbook.txt | N/A |
 | https://small.oisd.nl/ | Sun, 10 Sep 2023 15:26:39 GMT |
-| https://urlhaus.abuse.ch/downloads/hostfile/ | Mon, 11 Sep 2023 07:30:02 GMT |
+| https://urlhaus.abuse.ch/downloads/hostfile/ | Mon, 11 Sep 2023 07:35:03 GMT |
 | https://v.firebog.net/hosts/AdguardDNS.txt | Fri, 08 Sep 2023 13:35:48 GMT |
 | https://v.firebog.net/hosts/Easylist.txt | Fri, 08 Sep 2023 13:31:04 GMT |
 | https://v.firebog.net/hosts/Easyprivacy.txt | Fri, 08 Sep 2023 13:31:05 GMT |
