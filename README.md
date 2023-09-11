@@ -7,7 +7,7 @@ _"Building a service on top of a regularly updated blacklist can provide immense
 
 ## Access the Blacklist
 
-**[Download](https://github.com/fabriziosalmi/blacklists/releases/latest)** or use this up-to-the-minute blacklist as your source:
+**[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
 
 ### Quick Access
 
