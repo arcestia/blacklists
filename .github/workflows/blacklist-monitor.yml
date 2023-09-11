@@ -16,3 +16,9 @@ jobs:
     - name: Check and Update Blacklists
       run: |
         python .github/scripts/check_blacklists.py
+    - name: Refresh repository
+      run: git pull https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+    - name: Add updated blacklist to repository
+      run: git add blacklist_monitor.md && git commit -m "blacklist monitor update" 
+    - name: Push to repository
+      run: git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
