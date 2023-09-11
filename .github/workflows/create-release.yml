@@ -1,4 +1,4 @@
-name: GitHub Release
+name: Process Blacklist and Create Release
 
 on:
   push:
@@ -15,6 +15,7 @@ jobs:
     steps:
     - run: git config --global user.email "fabrizio.salmi@gmail.com"
     - run: git config --global user.name "fabriziosalmi"
+
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
@@ -24,41 +25,36 @@ jobs:
 
     - name: Delete Release if Exists
       run: |
-        release_id=$(curl -H "Authorization: token $GITHUB_TOKEN" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
+        release_id=$(curl -H "Authorization: token ${{ secrets.PAT }}" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
         if [ "$release_id" != "null" ]; then
-          curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
+          curl -X DELETE -H "Authorization: token ${{ secrets.PAT }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Delete Tag if Exists
       run: |
         if git show-ref --tags latest; then
           git push --delete origin latest
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
-
-    - name: Create temporary directory
-      run: mkdir temp_directory
 
     - name: Extract blacklist.txt from tar.gz
-      run: tar -xzf all.fqdn.blacklist.tar.gz -C temp_directory/blacklist.txt
+      run: |
+        mkdir -p temp_directory
+        tar -xzf all.fqdn.blacklist.tar.gz -C temp_directory
+        mv temp_directory/all.fqdn.blacklist temp_directory/blacklist.txt
 
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       with:
         tag_name: latest
-        release_name: "Domains blacklist"
+        release_name: "Domains Blacklist"
         body: Auto-generated release from GitHub Actions.
         draft: false
         prerelease: false
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Upload Release Asset
-      id: upload-release-asset
       uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
