@@ -19,22 +19,30 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 2  # get current and previous commit
+        fetch-depth: 0  # Get all commits
         ref: main
         token: ${{ secrets.PAT }}
+
+    # Find the two latest commits where the file changed
+    - name: Find commits
+      id: find_commits
+      run: |
+        COMMITS=$(git log --pretty=format:'%H' all.fqdn.blacklist.tar.gz | head -2)
+        echo "::set-output name=commits::$COMMITS"
 
     # Extract current blacklist
     - name: Extract current blacklist.txt
       run: |
         mkdir current
+        git checkout $(echo "${{ steps.find_commits.outputs.commits }}" | awk '{print $1}')
         tar -xzf all.fqdn.blacklist.tar.gz -C current
         mv current/all.fqdn.blacklist current/blacklist.txt
 
     # Extract previous blacklist
     - name: Extract previous blacklist.txt
       run: |
-        git checkout HEAD^
         mkdir previous
+        git checkout $(echo "${{ steps.find_commits.outputs.commits }}" | awk '{print $2}')
         tar -xzf all.fqdn.blacklist.tar.gz -C previous
         mv previous/all.fqdn.blacklist previous/blacklist.txt
 
@@ -50,7 +58,7 @@ jobs:
       run: |
         ADDED_COUNT=$(wc -l < added_domains.txt)
         REMOVED_COUNT=$(wc -l < removed_domains.txt)
-        BODY="### Domains Update Summary: Added Domains: $ADDED_COUNT, Removed Domains: $REMOVED_COUNT"
+        BODY="### Domains Update Summary:\n\n- Added Domains: $ADDED_COUNT\n- Removed Domains: $REMOVED_COUNT"
         echo "::set-output name=body::$BODY"
 
     - name: Delete Release if Exists
