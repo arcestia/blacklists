@@ -10,10 +10,14 @@ _"Building a service on top of a regularly updated blacklist can provide immense
 **[Download](https://github.com/fabriziosalmi/blacklists/releases/latest)** or use this up-to-the-minute blacklist as your source:
 
 ### Quick Access
+
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
-
+or
+```
+https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
+```
 ### Compatibility
 Works seamlessly with:
 - Windows, Mac, Linux via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension
