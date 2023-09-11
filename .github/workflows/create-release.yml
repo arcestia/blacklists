@@ -43,7 +43,7 @@ jobs:
       run: mkdir temp_directory
 
     - name: Extract blacklist.txt from tar.gz
-      run: tar -xzf all.fqdn.blacklist.tar.gz -C temp_directory/
+      run: tar -xzf all.fqdn.blacklist.tar.gz -C temp_directory/blacklist.txt
 
     - name: Create Release
       id: create_release
