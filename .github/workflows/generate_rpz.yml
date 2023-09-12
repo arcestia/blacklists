@@ -12,29 +12,32 @@ jobs:
   generate_rpz:
     runs-on: ubuntu-latest
     steps:
-      - run: git config --global user.email "fabrizio.salmi@gmail.com"
-      - run: git config --global user.name "fabriziosalmi"
-      - name: Check out repository code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
-          ref: main
-          token: ${{ secrets.PAT }}
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
 
-      - name: Install Dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y bind9utils
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+        ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract and Convert
-        run: |
-          mkdir output
-          tar -xzf all.fqdn.blacklist.tar.gz
-          cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > output/rpz_blacklist.txt
-          tar -czf rpz_blacklist.tar.gz -C output rpz_blacklist.txt
-      - name: Refresh repository
-        run: git pull https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
-      - name: Add updated RPZ blacklist to repository
-        run: git add rpz_blacklist.tar.gz && git commit -m "RPZ updated" 
-      - name: Push to repository
-        run: git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+    - name: Install Dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y bind9utils
+
+    - name: Extract and Convert
+      run: |
+        mkdir output
+        tar -xzf all.fqdn.blacklist.tar.gz
+        cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > output/rpz_blacklist.txt
+        tar -czf rpz_blacklist.tar.gz -C output rpz_blacklist.txt
+
+    - name: Add updated RPZ blacklist to repository
+      run: |
+        git add rpz_blacklist.tar.gz
+        git commit -m "RPZ updated" 
+        git push
