@@ -12,19 +12,24 @@ jobs:
   Generate-Blacklist:
     runs-on: ubuntu-latest
     steps:
-      - run: git config --global user.email "fabrizio.salmi@gmail.com"
-      - run: git config --global user.name "fabriziosalmi"
-      - name: Check out repository code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
-          ref: main
-          token: ${{ secrets.PAT }}
-      - name: Generate blacklist
-        run: sudo /bin/bash generate_fqdn.sh
-      - name: Refresh repository
-        run: git pull https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
-      - name: Add updated blacklist to repository
-        run: git add all.fqdn.blacklist.tar.gz && git commit -m "last update" 
-      - name: Push to repository
-        run: git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Fetch all history for completeness
+        ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Generate blacklist
+      run: sudo /bin/bash generate_fqdn.sh
+
+    - name: Commit and Push updated blacklist to repository
+      run: |
+        BLACKLIST_COUNT=$(tar -tzf all.fqdn.blacklist.tar.gz | wc -l) # Assuming one domain per line in the tar file
+        git add all.fqdn.blacklist.tar.gz 
+        git commit -m "Updated blacklist with $BLACKLIST_COUNT domains"
+        git push origin main
