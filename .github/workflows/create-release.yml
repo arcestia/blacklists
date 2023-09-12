@@ -13,15 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: git config --global user.email "fabrizio.salmi@gmail.com"
-    - run: git config --global user.name "fabriziosalmi"
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
 
     - name: Check out repository code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
       with:
         fetch-depth: 1
         ref: main
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     # Extract current blacklist
     - name: Extract current blacklist.txt
@@ -32,9 +34,9 @@ jobs:
 
     - name: Delete Release if Exists
       run: |
-        release_id=$(curl -H "Authorization: token ${{ secrets.PAT }}" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
+        release_id=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
         if [ "$release_id" != "null" ]; then
-          curl -X DELETE -H "Authorization: token ${{ secrets.PAT }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
+          curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
         fi
 
     - name: Delete Tag if Exists
@@ -52,7 +54,7 @@ jobs:
         draft: false
         prerelease: false
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload Release Asset (Blacklist)
       uses: actions/upload-release-asset@v1
@@ -62,7 +64,7 @@ jobs:
         asset_name: blacklist.txt
         asset_content_type: text/plain
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Clean up
       run: rm -r current
