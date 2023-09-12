@@ -129,7 +129,7 @@ For a full list, check the [complete blacklists URLs](https://github.com/fabrizi
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
 - Search API
 ```
-curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"$DOMAIN\"]}" https://check.domainsblacklists.com/check_domain
+curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"example.com\"]}" https://check.domainsblacklists.com/check_domain
 ```
 
 - Telegram Bot blacklist checker
