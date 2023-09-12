@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - 'whitelist.txt'
-  workflow_dispatch:
 
 jobs:
   update-whitelist:
@@ -19,17 +18,17 @@ jobs:
         git config --global user.name "GitHub Action"
 
     - name: Check out repository code
-      uses: actions/checkout@v4  # Use v2 which is a newer version than v3
+      uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # Fetch all history so git can detect changes properly
-
+        fetch-depth: 2  
+        
     - name: Sort and remove duplicates from whitelist.txt
       run: |
         sort -u whitelist.txt -o whitelist.txt
 
     - name: Commit and push if there are changes
       run: |
-        git diff
+        LINES=$(wc -l < whitelist.txt)
         git add whitelist.txt
-        git diff-index --quiet HEAD || git commit -m "Update whitelist.txt"
+        git diff-index --quiet HEAD || git commit -m "Updated whitelist.txt - Total FQDNs: $LINES"
         git push
