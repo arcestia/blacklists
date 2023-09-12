@@ -46,7 +46,7 @@ I'm passionate about digital security, and this project is a testament to that c
 
 ### Quick use
 
-Currently, the most convenient way to utilize these blacklists on desktop and laptop computers is through the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension. You can import the list as a custom blacklist, which allows you to override any blocked websites instantly and browse freely.
+Currently, the most convenient way to utilize these blacklists on desktop and laptop computers is through the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension. You can import the list as a custom blacklist, which allows you to override any blocked websites instantly and browse freely. If you have a good whitelist please share such domains [here](https://req.domainsblacklists.com/) to improve the project.
 
 I'm also conducting tests on the iPhone using the free version of [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo). I've added the blacklist as a custom list, and the performance has been quite satisfactory.
 
