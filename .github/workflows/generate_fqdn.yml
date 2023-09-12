@@ -29,7 +29,6 @@ jobs:
 
     - name: Commit and Push updated blacklist to repository
       run: |
-        BLACKLIST_COUNT=$(tar -tzf all.fqdn.blacklist.tar.gz | wc -l) # Assuming one domain per line in the tar file
         git add all.fqdn.blacklist.tar.gz 
-        git commit -m "Updated blacklist with $BLACKLIST_COUNT domains"
+        git commit -m "Updated blacklist."
         git push origin main
