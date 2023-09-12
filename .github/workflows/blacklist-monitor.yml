@@ -10,14 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: git config --global user.email "fabrizio.salmi@gmail.com"
-    - run: git config --global user.name "fabriziosalmi"
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
+
     - name: Check out repository code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
       with:
-        fetch-depth: 1  # Shallow clones should be disabled to decrease time waste 
+        fetch-depth: 1
         ref: main
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Install dependencies
       run: |
@@ -26,9 +29,9 @@ jobs:
     - name: Check and Update Blacklists
       run: |
         python .github/scripts/check_blacklists.py
-    - name: Refresh repository
-      run: git pull https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+
     - name: Add updated blacklists_monitor.md to repository
-      run: git add blacklists_monitor.md && git commit -m "blacklist monitor update" 
-    - name: Push to repository
-      run: git push https://fabriziosalmi:${{ secrets.PAT }}@github.com/fabriziosalmi/blacklists
+      run: |
+        git add blacklists_monitor.md
+        git commit -m "blacklist monitor update" 
+        git push
