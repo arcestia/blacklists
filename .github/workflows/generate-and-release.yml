@@ -24,7 +24,7 @@ jobs:
       with:
         fetch-depth: 1  # Fetch all history for completeness
         ref: main
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
 
     - name: Generate blacklist
       run: sudo /bin/bash generate_fqdn.sh
@@ -49,7 +49,7 @@ jobs:
       with:
         fetch-depth: 1  # Fetch all history for completeness
         ref: main
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
         
     # Extract current blacklist
     - name: Extract current blacklist.txt
@@ -60,9 +60,9 @@ jobs:
 
     - name: Delete Release if Exists
       run: |
-        release_id=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
+        release_id=$(curl -H "Authorization: token ${{ secrets.PAT }}" -s "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/latest" | jq .id)
         if [ "$release_id" != "null" ]; then
-          curl -X DELETE -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
+          curl -X DELETE -H "Authorization: token ${{ secrets.PAT }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
         fi
 
     - name: Delete Tag if Exists
@@ -80,7 +80,7 @@ jobs:
         draft: false
         prerelease: false
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Upload Release Asset (Blacklist)
       uses: actions/upload-release-asset@v1
@@ -90,7 +90,41 @@ jobs:
         asset_name: blacklist.txt
         asset_content_type: text/plain
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Clean up
       run: rm -r current
+
+  Generate-RPZ:
+    needs: Create-Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+        ref: main
+        token: ${{ secrets.PAT }}
+
+    - name: Install Dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y bind9utils
+
+    - name: Extract and Convert
+      run: |
+        mkdir output
+        tar -xzf all.fqdn.blacklist.tar.gz
+        cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > output/rpz_blacklist.txt
+        tar -czf rpz_blacklist.tar.gz -C output rpz_blacklist.txt
+
+    - name: Add updated RPZ blacklist to repository
+      run: |
+        git add rpz_blacklist.tar.gz
+        git commit -m "RPZ updated" 
+        git push
