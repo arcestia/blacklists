@@ -25,7 +25,7 @@ jobs:
         echo "| Total Blacklisted Domains | $BLACKLISTED_COUNT |" >> stats.md
         echo "| Total Whitelisted Domains | $WHITELISTED_COUNT |" >> stats.md
         echo "| Total Blacklist Sources | $BLACKLISTS_SOURCE_COUNT |" >> stats.md
-        echo "| Total Blacklisted Domains (streaming) | $STREAMING_BLACKLIST_COUNT |" >> stats.md
+        echo "| Total Custom Blacklisted Domains | $STREAMING_BLACKLIST_COUNT |" >> stats.md
         echo "---" >> stats.md
         echo "### Badges" >> stats.md
         echo "- ![Static Badge](https://img.shields.io/badge/blacklisted-$BLACKLISTED_COUNT-cc0000)" >> stats.md
