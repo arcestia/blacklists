@@ -22,7 +22,6 @@ jobs:
         ref: main
         token: ${{ secrets.PAT }}
 
-    steps:
     - name: Build README.md from external markdown files
       run: |
         cat header.md badges.md access.md why.md contribute.md credits.md testing.md roadmap.md footer.md > README.md
