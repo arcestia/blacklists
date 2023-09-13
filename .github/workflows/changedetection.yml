@@ -1,4 +1,4 @@
-name: Change Detection
+name: Blacklists Monitor
 
 on:
   schedule:
