@@ -144,7 +144,7 @@ jobs:
       with:
         fetch-depth: 1
         ref: main
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT }}
 
     - name: Fetch and calculate stats
       run: |
