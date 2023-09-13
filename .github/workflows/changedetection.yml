@@ -26,15 +26,16 @@ jobs:
       env:
         DB_UA: ${{ secrets.DB_UA }}
         CD_API_KEY: ${{ secrets.CD_API_KEY }}
+        CD_API_URL: ${{ secrets.CD_API_URL }}
+        
       run: |
         # Make an API call to fetch the data with the specified headers
-        curl https://changedetection.domainsblacklists.com/api/v1/watch -H "user-agent:$DB_UA" -H "x-api-key:$CD_API_KEY" > data.json
+        curl $CD_API_URL/api/v1/watch -H "user-agent:$DB_UA" -H "x-api-key:$CD_API_KEY" > data.json
     
         current_time=$(date +%s)
         day_in_seconds=86400
     
         cat data.json | jq --argjson current_time "$current_time" --argjson day_in_seconds "$day_in_seconds" 'to_entries | map(select((.value.last_changed > 0) and (($current_time - .value.last_changed) <= $day_in_seconds))) | .[].value.url' > most-updates.blacklists.urls
-
    
     - name: Commit and push if there are changes
       run: |
