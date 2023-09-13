@@ -1,12 +1,19 @@
 ## Roadmap
 
-Could be nice if some missions will be achieved:
+2023
+- Improve repository (example: release only no tar.gz versioned, Pages duties)
+- Improve documentation
+- Improve websites
+- Improve blacklist
+- Improve whitelist
 
-- Check the web for more blacklists to be aggregated when possible
-- Whitelist content can be improved
-- Adult and newly registered domains are a huge challenge to manage on separate aggregated blacklists, postponed..
+
+2024
 - IP blacklists integration (get FQDNs from blacklisted IPs and provide a custom FQDN  list to include in the main one)
-- Domain ranking insights is a topic, should be a fail and learn initiative
-- Improve documentation and website UX (especially for non techie users)
-- Fix and learn from everything
+- Domain ranking service
+- Safe browsing service
+- Adult domains list
+- Newly registered domains list
+
+
 
