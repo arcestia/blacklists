@@ -4,9 +4,9 @@ I'm deeply committed to digital security, and this blacklist reflects that commi
 
 **How to Use**
 
-- On desktop and laptop computers, easily use it with the uBlock Origin browser extension. Import it as a custom blacklist for instant website unblocking.
-- On iPhones, it works well with AdGuard Pro for iOS as a custom list.
-- My setup involves a series of layers for robust protection.
+- On desktop and laptop computers, easily use it with the uBlock Origin browser extension. Import it as a custom blacklist for instant website unblocking
+- On iPhones, it works well with AdGuard Pro for iOS as a custom list
+- My setup involves a series of layers for robust protection (uBlock Origin browser extension, PiHole, AdGuard Home as PiHole upstream, Squid proxy)
 
 **Efficient Retrieval**
 
