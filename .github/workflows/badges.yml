@@ -1,4 +1,4 @@
-name: Badges
+lname: Badges
 
 on:
   workflow_dispatch:
