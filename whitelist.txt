@@ -1,4 +1,3 @@
-windows.net
 0.client-channel.google.com
 17track.net
 1drv.com
@@ -2059,6 +2058,7 @@ wikivoyage.org
 wiley.com
 win10.ipv6.microsoft.com
 windows.com
+windows.net
 windowsupdate.com
 windowsupdate.nsatc.net
 windowsupdate.s.llnwi.net
