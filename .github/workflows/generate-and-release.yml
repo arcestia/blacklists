@@ -140,9 +140,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repository code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
-        fetch-depth: 1
+        fetch-depth: 1 
         ref: main
         token: ${{ secrets.PAT }}
 
@@ -162,9 +162,9 @@ jobs:
 
     - name: Commit and push stats.md
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
         git add stats.md
         git commit -m "Stats updated."
         git pull --rebase origin main
         git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
