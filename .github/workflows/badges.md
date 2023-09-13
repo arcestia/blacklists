@@ -1,0 +1,35 @@
+name: Badges
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 * * * *'  # This will run the action every hour. Adjust as needed.
+
+jobs:
+  fetch-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+
+    - name: Fetch and calculate stats
+      run: |
+        BLACKLISTED_COUNT=$(curl -sL "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt" | wc -l)
+        WHITELISTED_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/whitelist.txt" | wc -l)
+        BLACKLISTS_SOURCE_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/blacklists.fqdn.urls" | wc -l)
+        STREAMING_BLACKLIST_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/custom/streaming.txt" | wc -l)
+
+        echo "- ![Static Badge](https://img.shields.io/badge/blacklisted-$BLACKLISTED_COUNT-cc0000)" > badges.md
+        echo "- ![Static Badge](https://img.shields.io/badge/whitelisted-$WHITELISTED_COUNT-00CC00)" >> badges.md
+        echo "- ![Static Badge](https://img.shields.io/badge/blacklists-$BLACKLISTS_SOURCE_COUNT-000000)" >> badges.md
+        echo "- ![Static Badge](https://img.shields.io/badge/custom_blacklisted-$STREAMING_BLACKLIST_COUNT-000000)" >> badges.md
+
+    - name: Commit and push stats.md
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add badges.md
+        git commit -m "Badges updated."
+        git pull --rebase origin main
+        git push origin main
