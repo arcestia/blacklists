@@ -19,5 +19,3 @@
 - Firefox extension site checker
 - Search API Docker image
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more)
-
-## Roadmap
