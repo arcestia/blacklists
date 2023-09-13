@@ -1,0 +1,35 @@
+name: Readme update
+
+on:
+  push:
+    paths:
+      - 'all.fqdn.blacklist.tar.gz'
+  workflow_dispatch:
+
+jobs:
+  readme-update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Check out repository code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+        ref: main
+        token: ${{ secrets.PAT }}
+
+    steps:
+    - name: Build README.md from external markdown files
+      run: |
+        cat header.md badges.md access.md why.md contribute.md credits.md testing.md roadmap.md footer.md > README.md
+
+    - name: Add updated blacklists_monitor.md to repository
+      run: |
+        git add README.md
+        git commit -m "README.md updated." 
+        git pull --rebase origin main
+        git push origin main
