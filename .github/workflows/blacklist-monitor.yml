@@ -27,11 +27,13 @@ jobs:
         pip install tqdm requests
 
     - name: Check and Update Blacklists
+      id: update-blacklists
       run: |
         python .github/scripts/check_blacklists.py
+        echo "Last Checked: $(date -u)" >> blacklists_monitor.md
 
     - name: Add updated blacklists_monitor.md to repository
       run: |
         git add blacklists_monitor.md
-        git commit -m "blacklist monitor update" 
+        git commit -m "Update blacklist monitor" 
         git push
