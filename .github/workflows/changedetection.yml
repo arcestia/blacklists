@@ -23,14 +23,11 @@ jobs:
     - name: Fetch recent blacklist changes
       run: |
         # Make an API call to fetch the data with the specified headers
-        curl -s "https://changedetection.domainsblacklists.com/api/v1/watch" -H "user-agent:{{ secrets.DB_UA }}" -H "x-api-key:{{ secrets.CD_API_KEY }}" > data.json
+        curl https://changedetection.domainsblacklists.com/api/v1/watch -H "user-agent:{{ secrets.DB_UA}}" -H "x-api-key:{{ secrets.CD_API_KEY}}" > data.json        
+        current_timestamp=$(date +%s)
+        one_day_ago=$(($current_timestamp - 86400))
+        cat data.json | jq --argjson oda "$one_day_ago" 'to_entries[] | select(.value.last_changed > $oda) | .value.url' > most-updates.blacklists.urls
         
-        # Get the current Unix timestamp
-        current_time=$(date +%s)
-        
-        # Parse the data and filter URLs with recent changes (within the last day)
-        jq --argjson current_time "$current_time" '. | to_entries | map(select(.value.last_changed > ($current_time | tonumber - 86400))) | .[].value.url' data.json > most-updates.blacklists.urls
-
     - name: Commit and push if there are changes
       run: |
         git config user.name "GitHub Action"
