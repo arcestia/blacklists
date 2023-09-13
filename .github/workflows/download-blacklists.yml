@@ -32,13 +32,11 @@ jobs:
           hash=$(echo -n "$filename" | md5sum | awk '{print $1}')
           # Replace spaces with underscores and convert to lowercase
           new_filename=$(echo "$filename" | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
-          # Append .txt to the new filename
-          new_filename_with_hash="$hash""_""$new_filename"".txt"
-          curl -L "$url" -o "blacklist-monitor/$new_filename_with_hash"
+          curl -L "$url" -o "blacklist-monitor/$new_filename"
         done < blacklists.fqdn.urls
 
     - name: Add and Commit Changes
       run: |
-        git add blacklist-monitor/*
+        git add blacklist-monitor/*.txt
         git commit -m "Update blacklist files"
         git push
