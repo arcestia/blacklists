@@ -3,11 +3,7 @@
 _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/fabriziosalmi/blacklists) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/fabriziosalmi/blacklists/main) [![Generate and Release](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml)  [![Blacklist Monitor](https://github.com/fabriziosalmi/blacklists/actions/workflows/blacklist-monitor.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/blacklist-monitor.yml)
-
-
-
-
-
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-56-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-2423278-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/custom_blacklisted-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total)
 ## Access the Blacklist
 
 **[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
@@ -42,7 +38,6 @@ Works seamlessly with:
 ### Whitelist submissions
 
 - **[Submit one or more domains for whitelisting](https://req.domainsblacklists.com/)**
-
 ## Why This Blacklist?
 
 I'm passionate about digital security, and this project is a testament to that commitment. I use this blacklist daily through a series of devices (smartphone, laptop, TV, IoT), allowing me to continually test and refine it. This ensures it remains effective across a range of applications and devices.
@@ -84,13 +79,11 @@ For domains you prefer accessible, simply whitelist them. For instance, selectiv
 ## [Detailed Documentation](https://github.com/fabriziosalmi/blacklists/blob/main/docs/README.md)
 
 Please check documentation for PiHole, AdGuard Home and Squid implementations.
-
 ## Contribute
 
 - Propose additions or removals to the blacklist
 - Enhance blacklist or whitelist processing
 - Dive into statistics and data analytics
-
 ## Credits
 
 This project owes its existence to numerous dedicated blacklist creators such as:
@@ -126,7 +119,6 @@ This project owes its existence to numerous dedicated blacklist creators such as
 and many more.
 
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
-
 ## Currently testing
 
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
@@ -148,7 +140,6 @@ For a full list, check the [complete blacklists URLs](https://github.com/fabrizi
 - Firefox extension site checker
 - Search API Docker image
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more)
-
 ## Roadmap
 
 Could be nice if some missions will be achieved:
