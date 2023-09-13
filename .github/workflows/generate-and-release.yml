@@ -1,4 +1,4 @@
-name: Generate and Release
+name: Generate and Release blacklist.txt
 
 on:
   schedule:
