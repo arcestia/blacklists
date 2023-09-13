@@ -32,8 +32,8 @@ jobs:
           hash=$(echo -n "$filename" | md5sum | awk '{print $1}')
           # Replace spaces with underscores and convert to lowercase
           new_filename=$(echo "$filename" | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
-          # Combine the hash and new filename
-          new_filename_with_hash="$hash""_""$new_filename"
+          # Append .txt to the new filename
+          new_filename_with_hash="$hash""_""$new_filename"".txt"
           curl -L "$url" -o "blacklist-monitor/$new_filename_with_hash"
         done < blacklists.fqdn.urls
 
