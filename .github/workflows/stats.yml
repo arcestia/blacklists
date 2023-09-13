@@ -17,17 +17,21 @@ jobs:
       run: |
         BLACKLISTED_COUNT=$(curl -sL "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt" | wc -l)
         WHITELISTED_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/whitelist.txt" | wc -l)
-        STREAMING_BLACKLIST_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/custom/streaming.txt" | wc -l)
         BLACKLISTS_SOURCE_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/blacklists.fqdn.urls" | wc -l)
-        
+        STREAMING_BLACKLIST_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/custom/streaming.txt" | wc -l)
+
         echo "| Metric | Count |" > stats.md
         echo "|--------|------:|" >> stats.md
         echo "| Total Blacklisted Domains | $BLACKLISTED_COUNT |" >> stats.md
         echo "| Total Whitelisted Domains | $WHITELISTED_COUNT |" >> stats.md
         echo "| Total Blacklist Sources | $BLACKLISTS_SOURCE_COUNT |" >> stats.md
         echo "| Total Blacklisted Domains (streaming) | $STREAMING_BLACKLIST_COUNT |" >> stats.md
-        echo "Testing badges: " >> stats.md
-        echo "![Static Badge](https://img.shields.io/badge/blacklisted-$BLACKLISTED_COUNT-cc0000)" >> stats.md
+        echo "---" >> stats.md
+        echo "### Badges" >> stats.md
+        echo "- ![Static Badge](https://img.shields.io/badge/blacklisted-$BLACKLISTED_COUNT-cc0000)" >> stats.md
+        echo "- ![Static Badge](https://img.shields.io/badge/whitelisted-$WHITELISTED_COUNT-00CC00)" >> stats.md
+        echo "- ![Static Badge](https://img.shields.io/badge/blacklists-$BLACKLISTS_SOURCE_COUNT-000000)" >> stats.md
+        echo "- ![Static Badge](https://img.shields.io/badge/custom_blacklisted-$STREAMING_BLACKLIST_COUNT-000000)" >> stats.md
 
     - name: Commit and push stats.md
       run: |
