@@ -22,7 +22,7 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # Fetch all history for completeness
+        fetch-depth: 1  # Fetch all history for completeness
         ref: main
         token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -39,8 +39,18 @@ jobs:
     needs: Generate-Blacklist
     runs-on: ubuntu-latest
     steps:
-    # (Removed repeated Git Config and Check out repository code here)
+    - name: Setup Git Configurations
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions[bot]"
 
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1  # Fetch all history for completeness
+        ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
     # Extract current blacklist
     - name: Extract current blacklist.txt
       run: |
