@@ -2,10 +2,11 @@ import os
 import requests
 from tqdm import tqdm
 from datetime import datetime
+from time import sleep
 
-# File paths
+# File paths and directories
 BLACKLISTS_URL_FILE = 'blacklists.fqdn.urls'
-BLACKLIST_MONITOR_MD = 'blacklists_monitor.md'
+BLACKLIST_MONITOR_DIR = 'blacklist-monitor'
 GITHUB_API_URL = "https://api.github.com/repos/{owner}/{repo}/commits?path={path}"
 
 def get_last_modified(url):
@@ -34,25 +35,32 @@ def get_last_modified(url):
         return "Error"
 
 def main():
-    with open(BLACKLISTS_URL_FILE, 'r') as f:
-        urls = [line.strip() for line in f]
+    # Create the blacklist-monitor directory if it doesn't exist
+    os.makedirs(BLACKLIST_MONITOR_DIR, exist_ok=True)
 
-    table_data = []
+    while True:
+        with open(BLACKLISTS_URL_FILE, 'r') as f:
+            urls = [line.strip() for line in f]
 
-    print("Checking blacklist URLs...")
-    for url in urls:
-        last_modified = get_last_modified(url)
-        table_data.append((url, last_modified))
+        table_data = []
 
-    # Update the markdown file
-    with open(BLACKLIST_MONITOR_MD, 'w') as f:
-        f.write("# Blacklists Monitor\n\n")
-        f.write("| URL | Last Modified |\n")
-        f.write("| --- | ------------- |\n")
-        for data in table_data:
-            f.write(f"| {data[0]} | {data[1]} |\n")
+        print("Checking blacklist URLs...")
+        for url in urls:
+            last_modified = get_last_modified(url)
+            table_data.append((url, last_modified))
 
-    print("Updated blacklists_monitor.md!")
+        timestamp = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+        monitor_file = os.path.join(BLACKLIST_MONITOR_DIR, f"blacklists_monitor_{timestamp}.md")
+
+        # Update the markdown file
+        with open(monitor_file, 'w') as f:
+            f.write("# Blacklists Monitor\n\n")
+            f.write("| URL | Last Modified |\n")
+            f.write("| --- | ------------- |\n")
+            for data in table_data:
+                f.write(f"| {data[0]} | {data[1]} |\n")
+
+        print(f"Updated {monitor_file}!")
 
 if __name__ == '__main__':
     main()
