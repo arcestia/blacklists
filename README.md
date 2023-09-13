@@ -4,7 +4,7 @@ _"Building a service on top of a regularly updated blacklist can provide immense
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/fabriziosalmi/blacklists/main) [![Generate and Release](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml)  [![Blacklists Monitor](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795278126-d795cc268595633d462de235?label=Whitelisting%20request%20service)
 
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-56-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-2422815-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/custom_blacklisted-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-56-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-2422817-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/custom_blacklisted-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ## Access the Blacklist
 
 **[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
@@ -107,15 +107,22 @@ curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application
 
 ## Roadmap
 
-Could be nice if some missions will be achieved:
+2023
+- Improve repository (example: release only no tar.gz versioned, Pages duties)
+- Improve documentation
+- Improve websites
+- Improve blacklist
+- Improve whitelist
 
-- Check the web for more blacklists to be aggregated when possible
-- Whitelist content can be improved
-- Adult and newly registered domains are a huge challenge to manage on separate aggregated blacklists, postponed..
+
+2024
 - IP blacklists integration (get FQDNs from blacklisted IPs and provide a custom FQDN  list to include in the main one)
-- Domain ranking insights is a topic, should be a fail and learn initiative
-- Improve documentation and website UX (especially for non techie users)
-- Fix and learn from everything
+- Domain ranking service
+- Safe browsing service
+- Adult domains list
+- Newly registered domains list
+
+
 
 ---
 ![Static Badge](https://img.shields.io/badge/DomainsBlacklists-For_a_safer_digital_experience-00ce00?style=for-the-badge)
