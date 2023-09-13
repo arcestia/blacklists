@@ -133,4 +133,4 @@ jobs:
         git pull --rebase origin main
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
