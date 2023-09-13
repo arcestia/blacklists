@@ -55,11 +55,19 @@ jobs:
         token: ${{ secrets.PAT }}
 
     # Extract current blacklist
+    # Extract current blacklist
     - name: Extract current blacklist.txt
       run: |
         mkdir current
         tar -xzf all.fqdn.blacklist.tar.gz -C current
         mv current/all.fqdn.blacklist current/blacklist.txt
+
+    - name: Count domains in blacklist
+      id: count_domains
+      run: |
+        count=$(wc -l < current/blacklist.txt)
+        echo "Number of domains: $count"
+        echo "::set-output name=count::$count"
 
     - name: Delete Release if Exists
       run: |
@@ -80,6 +88,7 @@ jobs:
       with:
         tag_name: latest
         release_name: "Domains Blacklist"
+        body: "Domains: ${{ steps.count_domains.outputs.count }}"
         draft: false
         prerelease: false
       env:
