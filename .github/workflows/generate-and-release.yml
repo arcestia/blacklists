@@ -53,7 +53,7 @@ jobs:
         fetch-depth: 1  # Fetch all history for completeness
         ref: main
         token: ${{ secrets.PAT }}
-        
+
     # Extract current blacklist
     - name: Extract current blacklist.txt
       run: |
@@ -134,3 +134,37 @@ jobs:
         git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
+
+  fetch-stats:
+    needs: Generate-RPZ
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+        ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Fetch and calculate stats
+      run: |
+        BLACKLISTED_COUNT=$(curl -sL "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt" | wc -l)
+        WHITELISTED_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/whitelist.txt" | wc -l)
+        STREAMING_BLACKLIST_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/custom/streaming.txt" | wc -l)
+        BLACKLISTS_SOURCE_COUNT=$(curl -sL "https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/blacklists.fqdn.urls" | wc -l)
+        
+        echo "| Metric | Count |" > stats.md
+        echo "|--------|------:|" >> stats.md
+        echo "| Total Blacklisted Domains | $BLACKLISTED_COUNT |" >> stats.md
+        echo "| Total Whitelisted Domains | $WHITELISTED_COUNT |" >> stats.md
+        echo "| Total Blacklist Sources | $BLACKLISTS_SOURCE_COUNT |" >> stats.md
+        echo "| Total Blacklisted Domains (streaming) | $STREAMING_BLACKLIST_COUNT |" >> stats.md
+
+    - name: Commit and push stats.md
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add stats.md
+        git commit -m "Stats updated."
+        git pull --rebase origin main
+        git push origin main
