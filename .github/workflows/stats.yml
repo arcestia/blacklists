@@ -3,7 +3,7 @@ name: Stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'  # This will run the action every hour. Adjust as needed.
+    - cron: '10 * * * *'  # This will run the action every hour. Adjust as needed.
 
 jobs:
   fetch-stats:
@@ -24,8 +24,8 @@ jobs:
         echo "|--------|------:|" >> stats.md
         echo "| Total Blacklisted Domains | $BLACKLISTED_COUNT |" >> stats.md
         echo "| Total Whitelisted Domains | $WHITELISTED_COUNT |" >> stats.md
-        echo "| Total Streaming Blacklist | $STREAMING_BLACKLIST_COUNT |" >> stats.md
         echo "| Total Blacklist Sources | $BLACKLISTS_SOURCE_COUNT |" >> stats.md
+        echo "| Total Blacklisted Domains (streaming) | $STREAMING_BLACKLIST_COUNT |" >> stats.md
 
     - name: Commit and push stats.md
       run: |
