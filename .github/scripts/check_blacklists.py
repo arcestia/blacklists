@@ -1,8 +1,14 @@
+"""
+This script checks the last modification dates for URLs and creates a markdown report.
+It is particularly tailored for checking blacklist URLs.
+"""
+
 import os
-import requests
-from tqdm import tqdm
 from datetime import datetime
 from time import sleep
+
+import requests
+from tqdm import tqdm
 
 # File paths and directories
 BLACKLISTS_URL_FILE = 'blacklists.fqdn.urls'
@@ -39,8 +45,8 @@ def main():
     os.makedirs(BLACKLIST_MONITOR_DIR, exist_ok=True)
 
     while True:
-        with open(BLACKLISTS_URL_FILE, 'r') as f:
-            urls = [line.strip() for line in f]
+        with open(BLACKLISTS_URL_FILE, 'r') as file_handle:
+            urls = [line.strip() for line in file_handle]
 
         table_data = []
 
@@ -53,12 +59,12 @@ def main():
         monitor_file = os.path.join(BLACKLIST_MONITOR_DIR, f"blacklists_monitor_{timestamp}.md")
 
         # Update the markdown file
-        with open(monitor_file, 'w') as f:
-            f.write("# Blacklists Monitor\n\n")
-            f.write("| URL | Last Modified |\n")
-            f.write("| --- | ------------- |\n")
+        with open(monitor_file, 'w') as file_handle:
+            file_handle.write("# Blacklists Monitor\n\n")
+            file_handle.write("| URL | Last Modified |\n")
+            file_handle.write("| --- | ------------- |\n")
             for data in table_data:
-                f.write(f"| {data[0]} | {data[1]} |\n")
+                file_handle.write(f"| {data[0]} | {data[1]} |\n")
 
         print(f"Updated {monitor_file}!")
 
