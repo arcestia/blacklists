@@ -171,7 +171,7 @@ https://get.domainsblacklists.com/blacklist.txt
 
 ## Integrate your Whitelist
 
-For public domain whitelisting, open an [issue](https://github.com/fabriziosalmi/blacklists/issues/new). For private whitelisting, use the provided script along with a `whitelist.txt` file.
+For public domain whitelisting, [submit your whitelist](https://req.domainsblacklists.com). For private whitelisting, use the provided script along with a `whitelist.txt` file.
 
 ## Docker
 
