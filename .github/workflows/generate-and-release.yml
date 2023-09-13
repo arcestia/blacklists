@@ -33,8 +33,11 @@ jobs:
       run: |
         git add all.fqdn.blacklist.tar.gz 
         git commit -m "Updated blacklist."
+        git pull --rebase origin main
         git push origin main
-
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+        
   Create-Release:
     needs: Generate-Blacklist
     runs-on: ubuntu-latest
