@@ -26,6 +26,8 @@ jobs:
         echo "| Total Whitelisted Domains | $WHITELISTED_COUNT |" >> stats.md
         echo "| Total Blacklist Sources | $BLACKLISTS_SOURCE_COUNT |" >> stats.md
         echo "| Total Blacklisted Domains (streaming) | $STREAMING_BLACKLIST_COUNT |" >> stats.md
+        echo "Testing badges: " >> stats.md
+        echo "![Static Badge](https://img.shields.io/badge/blacklisted-$BLACKLISTED_COUNT-cc0000)" >> stats.md
 
     - name: Commit and push stats.md
       run: |
