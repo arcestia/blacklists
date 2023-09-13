@@ -125,12 +125,13 @@ jobs:
     
     - name: Commit and Push updated blacklist to repository
       run: |
-        git pull --rebase origin main
         git add rpz_blacklist.tar.gz 
         git commit -m "RPZ updated"
+        git pull --rebase origin main
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
+        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+
 
     - name: Add updated RPZ blacklist to repository
       run: |
