@@ -38,6 +38,6 @@ jobs:
           git add blacklist.txt
           git commit -m "Update blacklist.txt"
           git pull --rebase origin gh-pages
-          git push origin HEAD:gh-pages
+          git push origin gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
