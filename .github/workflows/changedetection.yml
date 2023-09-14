@@ -35,15 +35,15 @@ jobs:
         current_time=$(date +%s)
         day_in_seconds=86400
     
-        cat data.json | jq --argjson current_time "$current_time" --argjson day_in_seconds "$day_in_seconds" 'to_entries | map(select((.value.last_changed > 0) and (($current_time - .value.last_changed) <= $day_in_seconds))) | .[].value.url' > most-updates.blacklists.urls
+        cat data.json | jq --argjson current_time "$current_time" --argjson day_in_seconds "$day_in_seconds" 'to_entries | map(select((.value.last_changed > 0) and (($current_time - .value.last_changed) <= $day_in_seconds))) | .[].value.url' > updated.blacklists.urls
    
     - name: Commit and push if there are changes
       run: |
         git config user.name "GitHub Action"
         git config user.email "action@github.com"
         
-        git add most-updates.blacklists.urls
-        git commit -m "Update most-updates.blacklists.urls with recent changes" || echo "No changes to commit"
+        git add updated.blacklists.urls
+        git commit -m "1d max freshness blacklists list updated." || echo "No changes to commit"
         git pull --rebase origin main
         git push origin main
       env:
