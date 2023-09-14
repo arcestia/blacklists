@@ -1,6 +1,6 @@
 | Metric | Count |
 |--------|------:|
-| Total Blacklisted Domains | 3701474 |
+| Total Blacklisted Domains | 3478580 |
 | Total Whitelisted Domains | 2177 |
 | Total Blacklist Sources | 60 |
 | Total Custom Blacklisted Domains | 546 |
