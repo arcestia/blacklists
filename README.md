@@ -2,12 +2,12 @@
 
 _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
-   **_Updates_**
-   - `New RPZ blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt`
-   - `Blacklists sources selection update: soon no more lists older than 24h`
-   - `Github pages deploy is broken and will be fixed soon`
+**_Updates_**
+> - `New RPZ blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt`
+> - `New Unbound blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt`
+> - `Github pages deploy is broken and will be fixed soon`
 ---
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-37-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3653702-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-38-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3653678-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ## Access the Blacklist
 
 **[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
@@ -26,7 +26,7 @@ Works seamlessly with:
 - Windows, Mac, Linux via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension
 - IPhone (Safari + DNS) via [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo)
 - Android via [AdGuard Pro for Android](https://adguard.com/it/adguard-android/overview.html)
-- [PiHole](https://pi-hole.net/) and [AdGuard Home](https://adguard.com/it/adguard-home/overview.html) DNS filtering applications
+- [PiHole](https://pi-hole.net/), [AdGuard Home](https://adguard.com/it/adguard-home/overview.html) and [Unbound](https://github.com/fabriziosalmi/blacklists/releases/tag/latest) DNS filtering applications
 - [Squid](http://www.squid-cache.org/) proxy
 - Firewalls like [nftables](https://github.com/fabriziosalmi/blacklists/blob/main/scripts/nft_blacklist_fqdn.sh) and WAF like [OPNsense](https://docs.opnsense.org/manual/how-tos/proxywebfilter.html)
 - DNS servers like [BIND9](https://github.com/fabriziosalmi/blacklists/tree/main/docs#how-to-implement-the-rpz-blacklist-with-bind9)
