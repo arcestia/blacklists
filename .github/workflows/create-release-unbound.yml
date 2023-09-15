@@ -1,31 +1,52 @@
-name: Unbound Blacklist Release
+name: Create Unbound Blacklist
 
 on:
-  # schedule:
-  #  - cron: '20 * * * *'
+  schedule:
+    - cron: '20 * * * *'  # This will run at midnight every day, adjust as needed
   workflow_dispatch:
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repo
+      uses: actions/checkout@v2
 
-      - name: Extract and Convert
-        run: |
-          mkdir output
-          tar -xzf all.fqdn.blacklist.tar.gz
-          cat all.fqdn.blacklist > output/rpz_blacklist.txt
+    - name: Download blacklist
+      run: |
+        wget https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 
-      - name: Create a Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            output/rpz_blacklist.txt
-          tag_name: latest # Replace with your desired tag name
-          token: ${{ secrets.PAT }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+    - name: Process for Unbound
+      run: |
+        echo "# Unbound blacklist format" > unbound_blacklist.txt
+        while IFS= read -r domain
+        do
+          echo "local-zone: \"$domain\" static" >> unbound_blacklist.txt
+        done < blacklist.txt
+
+    - name: Create release and upload blacklist for Unbound
+      uses: gh-actions/create-release@v1
+      with:
+        tag_name: latest
+        release_name: Domains blacklist
+        body: |
+          ## Usage with Unbound
+          To use this blacklist with Unbound:
+          1. Download `unbound_blacklist.txt` from this release.
+          2. Include it in your Unbound configuration:
+             ```
+             include: "/path/to/unbound_blacklist.txt"
+             ```
+          3. Restart Unbound to apply the changes.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upload release asset
+      uses: actions/upload-release-asset@v1.0.2
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./unbound_blacklist.txt
+        asset_name: unbound_blacklist.txt
+        asset_content_type: text/plain
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
