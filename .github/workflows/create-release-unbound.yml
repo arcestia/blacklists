@@ -1,9 +1,10 @@
 name: Create Unbound Blacklist
 
 on:
-  schedule:
-    - cron: '20 * * * *'  # This will run at midnight every day, adjust as needed
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate and Release blacklist.txt"]
+    types:
+      - completed
 
 jobs:
   build:
