@@ -1,25 +1,18 @@
 # Domains Blacklist
+> _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
-_"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
-
-**_Updates_**
-> - `New RPZ blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt`
-> - `New Unbound blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt`
----
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-50-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3653227-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
-## Access the Blacklist
-
-**[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
-
-### Quick Access
+## Downloads
+- Pi-Hole, AdGuard, uBlock Origin, Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
+- Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
+- Bind (rpz): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-50-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3425090-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+## Quick Access
 
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
-or
-```
-https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
-```
+or get [latest release](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt).
+
 ### Compatibility
 Works seamlessly with:
 - Windows, Mac, Linux via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension
