@@ -4,5 +4,5 @@ _"Building a service on top of a regularly updated blacklist can provide immense
 
 **_Updates_**
 > - `New RPZ blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt`
-> - `New Unbound blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt`
+> - `New Unbound blacklist URL: https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt`
 ---
