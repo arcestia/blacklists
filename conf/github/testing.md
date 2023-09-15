@@ -1,4 +1,4 @@
-## TODO ASAP
+## Fixing..
 - ~~Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file~~
 - ~~Remove old blacklists monitor (last modifier time table)~~
 - ~~Improve README.md files and action and move it away from root folder~~
