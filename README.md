@@ -2,14 +2,12 @@
 
 _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/fabriziosalmi/blacklists/main) [![Generate and Release](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml)  [![Blacklists Monitor](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795278126-d795cc268595633d462de235?label=Whitelisting%20requests%20service)
-
----
-   **Updates**
+   **_Updates_**
    - `Blacklists sources selection update: soon no more lists older than 24h`
    - `Github pages deploy is broken and will be fixed soon`
 ---
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-37-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3652962-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/fabriziosalmi/blacklists/main) [![Generate and Release](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/generate-and-release.yml)  [![Blacklists Monitor](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml/badge.svg)](https://github.com/fabriziosalmi/blacklists/actions/workflows/changedetection.yml)  ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-37-000000)  ![Static Badge](https://img.shields.io/badge/blacklisted_domains-3652962-cc0000) ![Static Badge](https://img.shields.io/badge/blacklisted_domains_(custom)-546-cc0000)  ![Static Badge](https://img.shields.io/badge/whitelisted_domains-2177-00CC00) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=blacklist.txt) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795278126-d795cc268595633d462de235?label=Whitelisting%20requests%20service)
+---
 ## Access the Blacklist
 
 **[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
