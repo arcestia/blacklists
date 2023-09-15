@@ -68,20 +68,6 @@ jobs:
         asset_content_type: text/plain
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
-
-    - name: Generate rpz_blacklist.txt
-      run: |
-        cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > current/rpz_blacklist.txt
-
-    - name: Upload Release Asset (RPZ Blacklist)
-      uses: actions/upload-release-asset@v1
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./current/rpz_blacklist.txt
-        asset_name: rpz_blacklist.txt
-        asset_content_type: text/plain
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
           
     - name: Clean up
       run: rm -r current
