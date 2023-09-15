@@ -7,7 +7,7 @@ _"Building a service on top of a regularly updated blacklist can provide immense
    - `Blacklists sources selection update: soon no more lists older than 24h`
    - `Github pages deploy is broken and will be fixed soon`
 ---
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-37-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3430308-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-37-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3430593-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ## Access the Blacklist
 
 **[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
