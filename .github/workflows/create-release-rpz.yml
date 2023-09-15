@@ -23,7 +23,7 @@ jobs:
         with:
           files: |
             output/rpz_blacklist.txt
-          tag_name: v1.0.0 # Replace with your desired tag name
+          tag_name: latest # Replace with your desired tag name
           token: ${{ secrets.PAT }}
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
