@@ -8,3 +8,4 @@ _"Building a service on top of a regularly updated blacklist can provide immense
    **Updates**
    - `Blacklists sources selection update: soon no more lists older than 24h`
    - `Github pages deploy is broken and will be fixed soon`
+---
