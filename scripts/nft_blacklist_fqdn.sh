@@ -23,10 +23,9 @@ validate_domain() {
 }
 
 # Download blacklist from GitHub
-wget -O /tmp/all.fqdn.blacklist.tar.gz https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/all.fqdn.blacklist.tar.gz
+wget -O /tmp/all.fqdn.blacklist https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 
 # Extract the blacklist
-tar -xzvf /tmp/all.fqdn.blacklist.tar.gz -C /tmp/
 input_file="/tmp/all.fqdn.blacklist"
 
 # Check if the input file exists and is readable
