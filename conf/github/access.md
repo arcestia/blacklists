@@ -1,16 +1,10 @@
-## Access the Blacklist
-
-**[DOWNLOAD](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** or use this up-to-the-minute blacklist as your source:
-
-### Quick Access
+## Quick Access
 
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
-or
-```
-https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
-```
+or get [latest release](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt).
+
 ### Compatibility
 Works seamlessly with:
 - Windows, Mac, Linux via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension
