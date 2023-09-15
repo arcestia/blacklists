@@ -25,7 +25,7 @@ jobs:
         done < blacklist.txt
 
     - name: Create release and upload blacklist for Unbound
-      uses: gh-actions/create-release@v1
+      uses: actions/create-release@v1
       with:
         tag_name: latest
         release_name: Domains blacklist
