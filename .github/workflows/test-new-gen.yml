@@ -47,12 +47,6 @@ jobs:
           curl -X DELETE -H "Authorization: token ${{ secrets.PAT }}" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$release_id"
         fi
 
-    - name: Delete Tag if Exists
-      run: |
-        if git show-ref --tags latest; then
-          git push --delete origin latest
-        fi
-
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -75,6 +69,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
 
+    - name: Generate rpz_blacklist.txt
+      run: |
+        cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > current/rpz_blacklist.txt
+
+    - name: Create a Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          current/rpz_blacklist.txt
+          tag_name: latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
+          
     - name: Clean up
       run: rm -r current
       env:
