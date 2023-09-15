@@ -73,12 +73,13 @@ jobs:
       run: |
         cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > current/rpz_blacklist.txt
 
-    - name: Create a Release
-      uses: softprops/action-gh-release@v1
+    - name: Upload Release Asset (RPZ Blacklist)
+      uses: actions/upload-release-asset@v1
       with:
-        files: |
-          current/rpz_blacklist.txt
-          tag_name: latest
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./current/rpz_blacklist.txt
+        asset_name: rpz_blacklist.txt
+        asset_content_type: text/plain
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
           
