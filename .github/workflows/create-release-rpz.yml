@@ -1,31 +1,30 @@
-name: RPZ Blacklist Release
+name: Create RPZ Blacklist
 
 on:
-  schedule:
-    - cron: '10 * * * *'
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Test new gen"]
+    types:
+      - completed
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repo
+      uses: actions/checkout@v2
 
-      - name: Extract and Convert
-        run: |
-          mkdir output
-          tar -xzf all.fqdn.blacklist.tar.gz
-          cat all.fqdn.blacklist | while read line; do echo "$line CNAME ."; done > output/rpz_blacklist.txt
+    - name: Download blacklist
+      run: |
+        wget https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
+        cat blacklist.txt | while read line; do echo "$line CNAME ."; done > rpz_blacklist.txt
 
-      - name: Create a Release
-        id: create_release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            output/rpz_blacklist.txt
-          tag_name: latest # Replace with your desired tag name
-          token: ${{ secrets.PAT }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+    - name: Create a Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          rpz_blacklist.txt
+        tag_name: latest 
+        token: ${{ secrets.PAT }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
