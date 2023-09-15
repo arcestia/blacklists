@@ -35,7 +35,7 @@ jobs:
         current_time=$(date +%s)
         day_in_seconds=86400
     
-        cat data.json | jq --argjson current_time "$current_time" --argjson day_in_seconds "$day_in_seconds" 'to_entries | map(select((.value.last_changed > 0) and (($current_time - .value.last_changed) <= $day_in_seconds))) | .[].value.url' > updated.blacklists.urls
+        cat data.json | jq --argjson current_time "$current_time" --argjson day_in_seconds "$day_in_seconds" 'to_entries | map(select((.value.last_changed > 0) and (($current_time - .value.last_changed) <= $day_in_seconds))) | .[].value.url' | sed "s/\"//g" > updated.blacklists.urls
    
     - name: Commit and push if there are changes
       run: |
