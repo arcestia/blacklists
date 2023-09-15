@@ -79,13 +79,13 @@ and many more.
 
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
 ## TODO ASAP
-- Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file
-- Remove all.fqdn.blacklist.tar.gz file
+- ~~Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file~~
+- Remove all.fqdn.blacklist.tar.gz file from repo
 - Fix github pages deploy on release
 - Remove old blacklists monitor (last modifier time table)
 - Remove blacklists with updates older than 1d
 - Improve README.md files and action and move it away from root folder
-- Move away as many files as possible from root folder
+- Clean root folder
    
 ## Beta testing
 
