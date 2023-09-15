@@ -1,9 +1,10 @@
 name: Readme update
 
 on:
-  push:
-    paths:
-      - 'all.fqdn.blacklist.tar.gz'
+  workflow_run:
+    workflows: ["Badges"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
@@ -26,7 +27,7 @@ jobs:
       run: |
         cat conf/github/header.md conf/github/badges.md conf/github/access.md conf/github/why.md conf/github/contribute.md conf/github/credits.md conf/github/testing.md conf/github/roadmap.md conf/github/footer.md > README.md
 
-    - name: Add updated blacklists_monitor.md to repository
+    - name: Add updated README.md to repository
       run: |
         git add README.md
         git commit -m "README.md updated." 
