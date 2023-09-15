@@ -2,7 +2,7 @@
 - ~~Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file~~
 - Remove all.fqdn.blacklist.tar.gz file from repo
 - Fix github pages deploy on release
-- Remove old blacklists monitor (last modifier time table)
+- ~~Remove old blacklists monitor (last modifier time table)~~
 - Remove blacklists with updates older than 1d
 - Improve README.md files and action and move it away from root folder
 - Clean root folder
