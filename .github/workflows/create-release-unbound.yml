@@ -1,0 +1,31 @@
+name: Unbound Blacklist Release
+
+on:
+  # schedule:
+  #  - cron: '20 * * * *'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Extract and Convert
+        run: |
+          mkdir output
+          tar -xzf all.fqdn.blacklist.tar.gz
+          cat all.fqdn.blacklist > output/rpz_blacklist.txt
+
+      - name: Create a Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            output/rpz_blacklist.txt
+          tag_name: latest # Replace with your desired tag name
+          token: ${{ secrets.PAT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
