@@ -1,4 +1,4 @@
-name: Create RPZ Blacklist Release
+name: RPZ Blacklist Release
 
 on:
   schedule:
