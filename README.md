@@ -6,7 +6,8 @@
 - Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
 - Bind (rpz): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 
---
+---
+
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/fresh_blacklists-50-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3652197-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2177-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-546-000000) ![GitHub all releases](https://img.shields.io/github/downloads/fabriziosalmi/blacklists/total) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ## Quick Access
 
