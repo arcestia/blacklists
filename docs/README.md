@@ -110,15 +110,9 @@ With these changes, Squid will deny requests made directly to IP addresses and w
 
 1. **Download the RPZ blacklist**: 
    
-   Navigate to the repository and download the latest `rpz_blacklist.tar.gz` from the `main` branch.
+   Navigate to the repository and download the [latest RPZ release](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt) 
 
-2. **Extract the blacklist**:
-
-   ```bash
-   tar -xzf rpz_blacklist.tar.gz
-   ```
-
-3. **Configure BIND9**:
+2. **Configure BIND9**:
 
    Edit your BIND configuration (often `named.conf` or `named.conf.local`):
 
@@ -131,7 +125,7 @@ With these changes, Squid will deny requests made directly to IP addresses and w
    ```bash
    zone "rpz.blacklist" {
        type master;
-       file "/path/to/your/extracted/rpz_blacklist.txt";
+       file "/path/to/your/rpz_blacklist.txt";
    };
 
    options {
