@@ -1,4 +1,4 @@
-## Credits
+## 🏅 Credits
 
 This project owes its existence to numerous dedicated blacklist creators such as:
 
