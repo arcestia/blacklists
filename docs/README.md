@@ -9,21 +9,17 @@ Navigate quickly:
 
 ## Generating the blacklist 
 
-I utilize the capabilities of ChangeDetection ([selfhosted](https://changedetection.io/)) to monitor and merge updates from curated [blacklists](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls). GitHub Actions automate the download of these blacklists every hour, consolidating them into a single file: [**all.fqdn.blacklist.tar.gz**](https://github.com/fabriziosalmi/blacklists/blob/main/all.fqdn.blacklist.tar.gz).
+I utilize the capabilities of ChangeDetection ([selfhosted](https://changedetection.io/)) to monitor and merge updates from curated [blacklists](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls). GitHub Actions automate the download of these blacklists every hour, consolidating them into a single file.
 
 Furthermore, I conduct regular [reviews](https://github.com/fabriziosalmi/blacklists/blob/main/docs/blacklists_reviews.md) to scrutinize the source blacklists, ensuring the accuracy and relevance of the information through whitelist updates.
 
-## Downloading the Blacklist
-
-You can access the automatically updated blacklist every hour through the following URL:
+## Downloads
+- Pi-Hole, AdGuard, uBlock Origin, Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
+- Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
+- Bind (rpz): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
-
-#### Alternative GitHub Downloads:
-
-- Direct [TAR.GZ](https://fabriziosalmi.github.io/blacklists/all.fqdn.blacklist.tar.gz) download.
-- Or clone the repository and fetch the latest [tar.gz](https://github.com/fabriziosalmi/blacklists/raw/main/all.fqdn.blacklist.tar.gz) file using `git clone --depth 1`.
 
 ## Implementing the Blacklist
 
