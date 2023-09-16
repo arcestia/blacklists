@@ -3,7 +3,7 @@ name: Blacklist monitor issue
 on:
   push:  # This will run the action on every push, adjust as necessary
     paths:
-      - 'blacklist.fqdn.urls'
+      - 'blacklists.fqdn.urls'
       - 'updated.blacklists.urls'
   workflow_dispatch:
 
@@ -16,11 +16,11 @@ jobs:
 
     - name: Compare files and create an issue if different
       run: |
-        DIFF=$(comm -23 blacklist.fqdn.urls updated.blacklists.urls)  # Compare files
+        DIFF=$(comm -23 blacklists.fqdn.urls updated.blacklists.urls)  # Compare files
         if [ "$DIFF" != "" ]; then
           echo "Differences detected. Opening an issue..."
           echo "$DIFF" > diff.txt
-          ISSUE_BODY=$(echo -e "Differences detected between blacklist.fqdn.urls and updated.blacklists.urls:\n\n\`\`\`$DIFF\`\`\`")
+          ISSUE_BODY=$(echo -e "Differences detected between blacklists.fqdn.urls and updated.blacklists.urls:\n\n\`\`\`$DIFF\`\`\`")
           echo "$ISSUE_BODY" > issue_body.txt
 
           gh issue create --title "Differences detected in updated.blacklists.urls" --body-file issue_body.txt --label lists
