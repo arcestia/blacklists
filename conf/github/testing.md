@@ -3,10 +3,9 @@
 - ~~Remove old blacklists monitor (last modifier time table)~~
 - ~~Improve README.md files and action and move it away from root folder~~
 - ~~Remove all.fqdn.blacklist.tar.gz file from repo~~
+- ~~Remove blacklists with updates older than 1d~~
 - Fix github pages deploy on release
-- Remove blacklists with updates older than 1d
 
-   
 ## Beta testing
 
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
