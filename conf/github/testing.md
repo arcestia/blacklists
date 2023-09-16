@@ -1,4 +1,4 @@
-## Fixing..
+## 👨‍💻 Fixing..
 - ~~Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file~~
 - ~~Remove old blacklists monitor (last modifier time table)~~
 - ~~Improve README.md files and action and move it away from root folder~~
@@ -6,7 +6,7 @@
 - ~~Remove blacklists with updates older than 1d~~
 - ~~Fix github pages deploy on release~~ (_postponed_)
 
-## Beta testing
+## 👨‍💻 Beta testing
 
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
 - [ChangeDetection via GitHub Action](https://github.com/fabriziosalmi/blacklists/blob/main/docs/blacklists_reviews.md) (24h max)
@@ -22,13 +22,10 @@ curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application
 curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"ads.google.com\"]}" https://check.domainsblacklists.com/check_domain
 ```
   
-## Alpha testing
+## 👨‍💻 Alpha testing
 
 - Telegram Bot blacklist checker
 - Notification (Teams via webhook, e-mail, ntfy) if blacklisted
 - Firefox extension site checker
 - Search API Docker image
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more) and create custom lists
-
-
-
