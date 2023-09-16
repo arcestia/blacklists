@@ -1,12 +1,12 @@
 # Domains Blacklist
 > _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
-## Downloads
+## ✅ Downloads
 - Pi-Hole, AdGuard, uBlock Origin, Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
 - Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
 - Bind (rpz): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 
-_or copy and paste this URL:_
+_Blacklist URL_
 ```
 https://get.domainsblacklists.com/blacklist.txt
 ```
@@ -26,12 +26,12 @@ https://get.domainsblacklists.com/blacklist.txt
 - **Robust Security**: Protect against phishing, spam, scams, ads, trackers, bad websites and more
 - **Whitelist Capability**: [Submit one or more domains for whitelisting](https://req.domainsblacklists.com/)
 - **Local Mirror**: Set up easily using the [Docker image](https://hub.docker.com/repository/docker/fabriziosalmi/blacklists/)
-## Contribute
+## 👨‍💻 Contribute
 
 - Propose additions or removals to the blacklist
 - Enhance blacklist or whitelist processing
 - Dive into statistics and data analytics
-## Credits
+## 🏅 Credits
 
 This project owes its existence to numerous dedicated blacklist creators such as:
 
@@ -40,7 +40,7 @@ This project owes its existence to numerous dedicated blacklist creators such as
 and many more.
 
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
-## Fixing..
+## 👨‍💻 Fixing..
 - ~~Create Release for RPZ blacklist and remove rpz_blacklist.tar.gz file~~
 - ~~Remove old blacklists monitor (last modifier time table)~~
 - ~~Improve README.md files and action and move it away from root folder~~
@@ -48,7 +48,7 @@ For a full list, check the [complete blacklists URLs](https://github.com/fabrizi
 - ~~Remove blacklists with updates older than 1d~~
 - ~~Fix github pages deploy on release~~ (_postponed_)
 
-## Beta testing
+## 👨‍💻 Beta testing
 
 - [Domain blacklist checker](https://review.domainsblacklists.com/)
 - [ChangeDetection via GitHub Action](https://github.com/fabriziosalmi/blacklists/blob/main/docs/blacklists_reviews.md) (24h max)
@@ -64,17 +64,14 @@ curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application
 curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"ads.google.com\"]}" https://check.domainsblacklists.com/check_domain
 ```
   
-## Alpha testing
+## 👨‍💻 Alpha testing
 
 - Telegram Bot blacklist checker
 - Notification (Teams via webhook, e-mail, ntfy) if blacklisted
 - Firefox extension site checker
 - Search API Docker image
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more) and create custom lists
-
-
-
-## Roadmap
+## 🗓️ Roadmap
 
 2023
 - Improve repository (example: release only no tar.gz versioned, Pages duties)
