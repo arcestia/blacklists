@@ -1,34 +1,35 @@
-name: Whitelist
+name: Validate and Sort whitelist.txt
 
 on:
   push:
-    branches:
-      - main
     paths:
       - 'whitelist.txt'
 
 jobs:
-  update-whitelist:
+  process:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Set git user
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Process and validate whitelist.txt
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+        # Lowercase, sort and uniq
+        sort -uf whitelist.txt | tr 'A-Z' 'a-z' > sorted.txt
+        mv sorted.txt whitelist.txt
 
-    - name: Check out repository code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 2  
-        
-    - name: Sort and remove duplicates from whitelist.txt
-      run: |
-        sort -u whitelist.txt -o whitelist.txt
+        # Validate FQDNs
+        while IFS= read -r fqdn; do
+            if ! echo "$fqdn" | grep -Pq "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,6}$"; then
+                echo "Invalid FQDN: $fqdn"
+                exit 1
+            fi
+        done < whitelist.txt
 
-    - name: Commit and push if there are changes
+    - name: Commit changes
       run: |
-        LINES=$(wc -l < whitelist.txt)
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add whitelist.txt
-        git diff-index --quiet HEAD || git commit -m "Updated whitelist.txt - Total FQDNs: $LINES"
+        git commit -m "Sort and validate whitelist.txt" || echo "No changes to commit"
         git push
