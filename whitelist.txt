@@ -242,7 +242,6 @@ bing.net
 bit.ly
 bitbucket.org
 bitcanna.io
-blank.about-scheme
 bleacherreport.com
 blocklist.kowabit.de
 blog.disqus.com
@@ -669,7 +668,6 @@ festyy.com
 fiddle.jshell.net
 fidh.org
 fif.com
-file-scheme
 filefactory.com
 files.im
 filesmonster.com
@@ -885,7 +883,6 @@ hosts.extras
 hostsfile.mine.nu
 hostsfile.org
 hostsmobile.oisd.nl
-hosty.blacklist
 house.gov
 houston.cbslocal.com
 howtoforge.com
@@ -1008,7 +1005,6 @@ instagram.com
 instantmessaging-pa.googleapis.com
 intuit.com
 investorplace.com
-ioc.exchange
 ioclist.domain.raw
 ioclist.hostname.raw
 ip-api.com
@@ -1120,7 +1116,6 @@ lnks.gd
 load.to
 loc.gov
 locale.roblox.com
-localhost
 lodz.tvp.pl
 login.aliexpress.com
 login.microsoftonline.com
@@ -1283,7 +1278,6 @@ news.ycombinator.com
 newsday.com
 newsmax.com
 newsweek.com
-newtab.about-scheme
 newyork.cbslocal.com
 newyorker.com
 nexus.passport.com
@@ -1411,7 +1405,6 @@ pgl.yoyo.org
 philadelphia.cbslocal.com
 philips.com
 phishing.army
-phishing.database
 phobos.apple.com
 php.net
 pi-hole.net
@@ -1698,7 +1691,6 @@ spiegel.de
 splcenter.org
 sport.onet.pl
 sport.pl
-sportando.basketball
 sportmediaset.mediaset.it
 sports.latimes.com
 sportsbet.com.au
@@ -2012,7 +2004,6 @@ wacom.com
 walgreens.com
 wallet.advcash.com
 walmart.com
-wander.science
 washington.cbslocal.com
 washingtonpost.com
 wcc.edu.in
