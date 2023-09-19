@@ -17,20 +17,22 @@ jobs:
       run: |
         # Lowercase, sort and uniq
         sort -uf whitelist.txt | tr 'A-Z' 'a-z' > sorted.txt
-        mv sorted.txt whitelist.txt
 
-        # Validate FQDNs
+        # Validate FQDNs and save only valid ones
         while IFS= read -r fqdn; do
-            if ! echo "$fqdn" | grep -Pq "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,6}$"; then
-                echo "Invalid FQDN: $fqdn"
-                exit 1
+            if echo "$fqdn" | grep -Pq "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,6}$"; then
+                echo "$fqdn" >> valid.txt
+            else
+                echo "Ignoring invalid FQDN: $fqdn"
             fi
-        done < whitelist.txt
+        done < sorted.txt
+
+        mv valid.txt whitelist.txt
 
     - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add whitelist.txt
-        git commit -m "Sort and validate whitelist.txt" || echo "No changes to commit"
+        git commit -m "Process and validate whitelist.txt" || echo "No changes to commit"
         git push
