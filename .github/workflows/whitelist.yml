@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'whitelist.txt'
+  workflow_dispatch:
 
 jobs:
   process:
