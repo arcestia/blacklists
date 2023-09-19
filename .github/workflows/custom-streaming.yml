@@ -3,7 +3,7 @@ name: Validate and Sort custom/streaming.txt
 on:
   push:
     paths:
-      - 'whitelist.txt'
+      - 'custom/streaming.txt'
   workflow_dispatch:
 
 jobs:
