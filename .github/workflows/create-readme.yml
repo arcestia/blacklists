@@ -27,9 +27,14 @@ jobs:
       run: |
         cat conf/github/header.md conf/github/badges.md conf/github/access.md conf/github/contribute.md conf/github/credits.md conf/github/testing.md conf/github/roadmap.md conf/github/footer.md > README.md
 
-    - name: Add updated README.md to repository
+    - name: Commit updated README.md if there are changes
       run: |
         git add README.md
-        git commit -m "README.md updated." 
-        git pull --rebase origin main
-        git push origin main
+        # Check if there are changes to commit
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "README.md updated."
+          git pull --rebase origin main
+          git push origin main
+        fi
