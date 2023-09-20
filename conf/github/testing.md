@@ -3,6 +3,7 @@
 - Wiki update
 - Improve implementation docs
 - Worst domains hunting
+- Changedetection container issues
 
 ## 👨‍💻 Beta testing
 
