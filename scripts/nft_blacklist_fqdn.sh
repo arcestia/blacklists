@@ -1,68 +1,68 @@
 #!/bin/bash
 
-# !! WARNING !!
-# please double check this script to avoid any unwanted effect on your systems and services
+# WARNING: Review this script carefully to avoid unintended consequences on your systems and services.
 
 # Function to display error messages
 print_error() {
-  echo "Error: $1"
+  echo "Error: $1" >&2
   exit 1
 }
 
 # Function to display success messages
 print_success() {
-  echo "$1"
+  echo "Success: $1"
 }
 
-# Function to validate a domain name using regex
+# Function to validate a domain name using a more precise regex
 validate_domain() {
-  local domain=$1
-  if [[ ! $domain =~ ^[a-zA-Z0-9.-]+$ ]]; then
+  local domain="$1"
+  local domain_regex="^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\.)+[A-Za-z]{2,63}$"
+  if [[ ! "$domain" =~ $domain_regex ]]; then
     print_error "Invalid domain name: $domain"
   fi
 }
 
-# Download blacklist from GitHub
-wget -O /tmp/all.fqdn.blacklist https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
+# Constants
+readonly BLACKLIST_URL="https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt"
+readonly INPUT_FILE="/tmp/all.fqdn.blacklist"
+readonly RULES_FILE="nftables_rules.nft"
+readonly TABLE_NAME="filter"
+readonly CHAIN_NAME="input_drop"
 
-# Extract the blacklist
-input_file="/tmp/all.fqdn.blacklist"
-
-# Check if the input file exists and is readable
-if [ ! -f "$input_file" ] || [ ! -r "$input_file" ]; then
-  print_error "Input file not found or not readable: $input_file"
+# Download the blacklist from GitHub
+if ! wget -q -O "$INPUT_FILE" "$BLACKLIST_URL"; then
+  print_error "Failed to download the blacklist from $BLACKLIST_URL"
 fi
 
-# Define the nftables table and chain names
-table_name="filter"
-chain_name="input_drop"
+# Ensure the input file exists and is readable
+if [[ ! -r "$INPUT_FILE" ]]; then
+  print_error "Input file not found or not readable: $INPUT_FILE"
+fi
 
-# Create the nftables rules file
-rules_file="nftables_rules.nft"
-echo "#!/usr/sbin/nft -f" > "$rules_file"
-echo "flush ruleset" >> "$rules_file"
-echo "table $table_name {" >> "$rules_file"
-echo "    chain $chain_name {" >> "$rules_file"
-
-# Read the input file line by line and add drop rules for each domain
-while read -r domain; do
-  if [ -n "$domain" ]; then
+# Initialize the nftables rules file
+{
+  echo "#!/usr/sbin/nft -f"
+  echo "flush ruleset"
+  echo "table $TABLE_NAME {"
+  echo "    chain $CHAIN_NAME {"
+  
+  # Process each domain from the input file
+  while IFS= read -r domain || [[ -n "$domain" ]]; do
     validate_domain "$domain" # Validate the domain name before adding the rule
-    echo "        drop ip daddr $domain" >> "$rules_file"
-    echo "        drop ip saddr $domain" >> "$rules_file"
-  fi
-done < "$input_file"
-
-# Add the nftables footer to the rules file
-echo "    }" >> "$rules_file"
-echo "}" >> "$rules_file"
+    echo "        drop ip daddr $domain"
+    echo "        drop ip saddr $domain"
+  done < "$INPUT_FILE"
+  
+  echo "    }"
+  echo "}"
+} > "$RULES_FILE"
 
 # Apply the rules using nft
-if nft -f "$rules_file"; then
-  print_success "nftables rules applied successfully."
+if ! nft -f "$RULES_FILE"; then
+  print_error "Error applying nftables rules. Ensure you have the necessary privileges."
 else
-  print_error "Error applying nftables rules. Make sure you have the necessary privileges."
+  print_success "nftables rules applied successfully."
 fi
 
-# Clean up the downloaded and extracted files, and the rules file
-rm -f /tmp/all.fqdn.blacklist.tar.gz "$input_file" "$rules_file"
+# Cleanup
+rm -f "$INPUT_FILE" "$RULES_FILE"
