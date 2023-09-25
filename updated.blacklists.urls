@@ -1,5 +1,4 @@
 https://github.com/What-Zit-Tooya/Ad-Block/blob/main/Main-Blocklist/Ad-Block-HOSTS.txt
-https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://hole.cert.pl/domains/domains.txt
 https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt
 https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
@@ -8,18 +7,13 @@ https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt
 https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt
 https://o0.pages.dev/Pro/domains.txt
 https://o0.pages.dev/mini/domains.txt
-https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=0&mimetype=plaintext
 https://phishing.army/download/phishing_army_blocklist_extended.txt
-https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
 https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
-https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware
-https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Scam
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking
-https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts
 https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt
 https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.txt
 https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/domains.txt
@@ -29,7 +23,6 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers.txt
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/domain.txt
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts-iOS
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/source/hosts.txt
 https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt
@@ -52,9 +45,7 @@ https://v.firebog.net/hosts/RPiList-Phishing.txt
 https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
 https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
 https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
-https://raw.githubusercontent.com/fabriziosalmi/blacklists/main/custom/streaming.txt
 https://malwareworld.com/textlists/suspiciousDomains.txt
-https://raw.githubusercontent.com/ThioJoe/YT-Spam-Lists/main/SpamDomainsList.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/tif.txt
 https://phishunt.io/feed.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt
