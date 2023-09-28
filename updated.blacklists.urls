@@ -1,4 +1,5 @@
 https://github.com/What-Zit-Tooya/Ad-Block/blob/main/Main-Blocklist/Ad-Block-HOSTS.txt
+https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://hole.cert.pl/domains/domains.txt
 https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt
 https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
@@ -13,6 +14,7 @@ https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-Angriffe
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
+https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking
 https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt
