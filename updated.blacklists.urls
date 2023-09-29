@@ -15,16 +15,12 @@ https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/Phishing-A
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/easylist
 https://raw.githubusercontent.com/RPiList/specials/master/Blocklisten/malware
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
-https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware
 https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking
 https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt
 https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.txt
 https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/domains.txt
 https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/domains.txt
 https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt
-https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt
-https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt
-https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/ultimate.txt
 https://raw.githubusercontent.com/lightswitch05/hosts/master/docs/lists/tracking-aggressive-extended.txt
 https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains2.list
@@ -36,5 +32,6 @@ https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
 https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
 https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
 https://malwareworld.com/textlists/suspiciousDomains.txt
+https://raw.githubusercontent.com/ThioJoe/YT-Spam-Lists/main/SpamDomainsList.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/tif.txt
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt
