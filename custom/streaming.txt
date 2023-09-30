@@ -28005,9 +28005,6 @@ www.batman-stream.tv
 www.casacinema.lol
 www.casacinema.media
 www.crichd.ac
-www.dazn.com
-www.direttagol.it
-www.espn.com
 www.filmpertutti.autos
 www.filmpertutti.boo
 www.forfreeiptv.com
@@ -28017,7 +28014,6 @@ www.fubo.tv
 www.guardaserie01.click
 www.hotstar.com
 www.howtechismade.com
-www.hulu.com
 www.infodrones.it
 www.iphonecountry.it
 www.jio.com
@@ -28053,3 +28049,5 @@ yesmovies.mom
 yesmovies.to
 yifymovies.fun
 yomovies.is
+www.cineblog01.app
+cineblog01.app
