@@ -9,7 +9,7 @@
   ```
   https://get.domainsblacklists.com/blacklist.txt
   ```
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-58-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3698127-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2170-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28092-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-58-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3698137-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2170-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28092-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ### Compatibility
 - **Windows**, **Mac**, **Linux** via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension
 - **iPhone** (Safari + DNS) via [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo)
@@ -72,13 +72,17 @@ curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application
 ## 🗓️ Roadmap
 
 2023
+- Improve repository (example: release only no tar.gz versioned, Pages duties)
+- Improve documentation
 - Improve websites
 - Improve blacklist
 - Improve whitelist
 
+
 2024
-- IP to FQDN blacklists integration
+- IP blacklists integration (get FQDNs from blacklisted IPs and provide a custom FQDN  list to include in the main one)
 - Domain ranking service
+- Safe browsing service
 - Adult domains list
 - Newly registered domains list
 
