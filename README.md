@@ -40,49 +40,26 @@ and many more.
 
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
 ## 👨‍💻 Fixing..
-- Fix github pages deploy on release
 - Wiki update
 - Improve implementation docs
 - Worst domains hunting
-- Changedetection container issues
-
-## 👨‍💻 Beta testing
-
-- [Domain blacklist checker](https://review.domainsblacklists.com/)
-- [ChangeDetection via GitHub Action](https://github.com/fabriziosalmi/blacklists/blob/main/docs/blacklists_reviews.md) (24h max)
-- Search API
-
-**example for whitelisted or non-blacklisted domain**
-```
-curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"whitelisted-or-not-blacklisted.com\"]}" https://check.domainsblacklists.com/check_domain
-```
-
-**example for blacklisted domain**
-```
-curl -s -H "User-Agent: DomainsBlacklists" -X POST -H "Content-Type: application/json" -d "{\"domains\": [\"ads.google.com\"]}" https://check.domainsblacklists.com/check_domain
-```
   
-## 👨‍💻 Alpha testing
+## 👨‍💻 Testing
 
-- Telegram Bot blacklist checker
-- Notification (Teams via webhook, e-mail, ntfy) if blacklisted
+- Machine learning to predict bad domains and rank all domains
 - Firefox extension site checker
-- Search API Docker image
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more) and create custom lists
 ## 🗓️ Roadmap
 
 2023
-- Improve repository (example: release only no tar.gz versioned, Pages duties)
-- Improve documentation
 - Improve websites
 - Improve blacklist
 - Improve whitelist
 
 
 2024
-- IP blacklists integration (get FQDNs from blacklisted IPs and provide a custom FQDN  list to include in the main one)
+- IP blacklists integration
 - Domain ranking service
-- Safe browsing service
 - Adult domains list
 - Newly registered domains list
 
