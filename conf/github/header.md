@@ -6,6 +6,9 @@
 - Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
 - Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 - Pi-Hole, AdGuard, uBlock Origin: 
-  ```
-  https://get.domainsblacklists.com/blacklist.txt
-  ```
+```
+https://get.domainsblacklists.com/blacklist.txt
+```
+
+## 📖 DNS filtering for dummies
+- Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md)
