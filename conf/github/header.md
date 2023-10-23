@@ -12,3 +12,4 @@ https://get.domainsblacklists.com/blacklist.txt
 
 ## 📖 DNS filtering for dummies
 - Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md)
+## 📈 At a glance
