@@ -1,12 +1,3 @@
-euronext.com
-www.euronext.com
-ajax.googleapis.com
-bootstrapcdn.com
-cloudflare.com
-datatables.net
-icons8.com
-jquery.com
-mapbox.com
 0.client-channel.google.com
 17track.net
 1drv.com
@@ -99,6 +90,7 @@ aiv-cdn.net.c.footprint.net
 aiv-delivery.net
 ajax.aspnetcdn.com
 ajax.cloudflare.com
+ajax.googleapis.com
 aka.ms
 akadns.net
 akamai-san24.exacttarget.com.edgekey.net
@@ -270,6 +262,7 @@ board.jdownloader.org
 bokser.org
 books.google.com
 bootstrap.build
+bootstrapcdn.com
 bordercriminologies.org
 boston.cbslocal.com
 boston.com
@@ -501,6 +494,7 @@ data-191b2429e8.rtl.de
 data.iana.org
 datafilehost.com
 dataplicity.com
+datatables.net
 datei.to
 datev-community.de
 dazn.com
@@ -661,6 +655,7 @@ eu-central-1.console.aws.amazon.com
 eu-north-1.console.aws.amazon.com
 eu-south-1.console.aws.amazon.com
 eu.api.amazonvideo.com
+euronext.com
 europa.eu
 eventbrite.com
 evernote.com
@@ -962,6 +957,7 @@ ichnaea.dradis.netflix.com
 ichnaea.netflix.com
 icj.org
 icloud.com
+icons8.com
 id.sonyentertainmentnetwork.com
 idealo.it
 identity.infocert.it
@@ -1200,6 +1196,7 @@ managehosting.aruba.it
 manager-magazin-de.manager-magazin.de
 manifest.googlevideo.com
 manifest.prod.boltdns.net
+mapbox.com
 margevicius.lt
 market.spotify.com
 marketwatch.com
@@ -2156,6 +2153,7 @@ www.cloudflare.com
 www.dazn.com
 www.dropbox.com
 www.estibot.com
+www.euronext.com
 www.facebook.com
 www.flaticon.com
 www.fotor.com
