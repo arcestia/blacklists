@@ -1,3 +1,12 @@
+euronext.com
+www.euronext.com
+ajax.googleapis.com
+bootstrapcdn.com
+cloudflare.com
+datatables.net
+icons8.com
+jquery.com
+mapbox.com
 0.client-channel.google.com
 17track.net
 1drv.com
