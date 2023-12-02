@@ -1,4 +1,3 @@
-push.services.mozilla.com
 0.client-channel.google.com
 17track.net
 1drv.com
@@ -1537,6 +1536,7 @@ publix.com
 pubsub.plex.bz
 pubsub.plex.tv
 pulsar.ebay
+push.services.mozilla.com
 pv-cdn.net
 pve.proxmox.com
 pvn.saturn.de
