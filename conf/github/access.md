@@ -11,5 +11,5 @@
 - **Comprehensive Coverage**: Aggregated from the most frequently updated blacklists ([more info](https://github.com/fabriziosalmi/blacklists/blob/main/docs/blacklists_reviews.md))
 - **Broad Compatibility**: Works across browsers, firewalls, proxies, and more
 - **Robust Security**: Protect against phishing, spam, scams, ads, trackers, bad websites and more
-- **Whitelist Capability**: [Submit one or more domains for whitelisting](https://req.domainsblacklists.com/)
+- **Whitelist Capability**: [Submit one or more domains for whitelisting](https://github.com/fabriziosalmi/blacklists/issues/new/choose)
 - **Local Mirror**: Set up easily using the [Docker image](https://hub.docker.com/repository/docker/fabriziosalmi/blacklists/)
