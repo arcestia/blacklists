@@ -1,16 +1,8 @@
 ## 🗓️ Roadmap
 
-2023
-- Improve websites
+2024
+
 - Improve blacklist
 - Improve whitelist
-
-
-2024
-- IP blacklists integration
 - Domain ranking service
-- Adult domains list
-- Newly registered domains list
-
-
-
+- Improve websites
