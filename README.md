@@ -55,19 +55,11 @@ For a full list, check the [complete blacklists URLs](https://github.com/fabrizi
 - Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more) and create custom lists
 ## 🗓️ Roadmap
 
-2023
-- Improve websites
+2024
+
 - Improve blacklist
 - Improve whitelist
-
-
-2024
-- IP blacklists integration
 - Domain ranking service
-- Adult domains list
-- Newly registered domains list
-
-
-
+- Improve websites
 ---
 ![Static Badge](https://img.shields.io/badge/DomainsBlacklists-For_a_safer_digital_experience-00ce00?style=for-the-badge)
