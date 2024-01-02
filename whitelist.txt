@@ -46,7 +46,6 @@ activation.gfe.nvidia.com
 activecampaign.com
 activehosted.com
 activity.windows.com
-ad-client.mediafe-prd.s.joyn.de
 ad-magazin.de
 ad.nl
 adaway.github.io
@@ -890,7 +889,6 @@ harvardlawreview.org
 hblock.molinero.dev
 hbogo.com
 hbogo.pl
-heartbeats.prd.data.s.joyn.de
 heavy.com
 hecom.com.hk
 heise.de
