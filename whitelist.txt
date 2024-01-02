@@ -1,6 +1,3 @@
-aisp.tech26.de
-api.tech26.de
-pisp.tech26.de
 0.client-channel.google.com
 17track.net
 1drv.com
@@ -87,6 +84,7 @@ agenziaentrate.gov.it
 agoda.com
 airbnb.co.uk
 airbnb.com
+aisp.tech26.de
 aiv-cdn.net
 aiv-cdn.net.c.footprint.net
 aiv-delivery.net
@@ -149,6 +147,7 @@ api.opinary.com
 api.passwordreset.microsoftonline.com
 api.revenuecat.com
 api.rlje.net
+api.tech26.de
 apis.google.com
 apis.live.net
 app-api.ted.com
@@ -1464,6 +1463,7 @@ pinterest.com
 pinterest.de
 pinterest.fr
 pinterest.in
+pisp.tech26.de
 pittsburgh.cbslocal.com
 pix.sueddeutsche.de
 pixabay.com
