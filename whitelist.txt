@@ -1,4 +1,3 @@
-a0.client-channel.google.com
 17track.net
 1drv.com
 1fichier.com
@@ -14,6 +13,7 @@ a0.client-channel.google.com
 70i.net
 a.klaviyo.com
 a.manager-magazin.de
+a0.client-channel.google.com
 a1014.g.akamai.net
 a1843.g.akamai.net
 ab13.mktossl.com
