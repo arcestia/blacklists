@@ -4,4 +4,6 @@ Custom blacklists currently integrated into the [main blacklist](https://get.dom
 
 - streaming.txt
 
+Looking for DOH domains blacklist? Check the [dibdot](https://github.com/dibdot/DoH-IP-blocklists/blob/master/doh-domains.txt) release, the best candidate so far!
+
 - Feel free to report new domains to block by [opening an issue](https://github.com/fabriziosalmi/blacklists/issues/new/choose).
