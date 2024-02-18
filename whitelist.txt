@@ -1322,7 +1322,6 @@ newsweek.com
 newyork.cbslocal.com
 newyorker.com
 nexus.passport.com
-nexusrules.officeapps.live.com
 nfl.com
 nhl.com
 nhs.uk
@@ -2058,7 +2057,6 @@ vod.pl
 vod.tvp.pl
 voe.sx
 void.gr
-vortex.data.microsoft.com
 vox.com
 vr-ov-crl.thawte.com
 vscode.freesubnet.com
@@ -2081,7 +2079,6 @@ web.archive.org
 web.de
 web.dev
 web.facebook.com
-web.vortex.data.microsoft.com
 web.whatsapp.com
 webadvisorc.rest.gti.mcafee.com
 webcache.googleusercontent.com
