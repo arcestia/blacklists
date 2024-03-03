@@ -7,7 +7,7 @@
 - Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 - Pi-Hole, AdGuard, uBlock Origin: 
 ```
-https://get.domainsblacklists.com/blacklist.txt
+https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 
 ## 📖 DNS filtering for dummies
