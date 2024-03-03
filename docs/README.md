@@ -29,7 +29,7 @@ Guides for various platforms:
 1. Navigate to **Adlists**
 2. Click **Add new adlist** and input:
 ```
-https://get.domainsblacklists.com/blacklist.txt
+https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 3. Go to **Tools > Update Gravity** and select the **Update** button.
 
@@ -47,7 +47,7 @@ https://get.domainsblacklists.com/blacklist.txt
 
 1. **Download and copy the blacklist to the squid folder**
 ```
-wget -O blacklist.txt https://get.domainsblacklists.com/blacklist.txt
+wget -O blacklist.txt https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 cp blacklist.txt /etc/squid/conf.d/blacklist.txt
 ```
 2. **/etc/squid/squid.conf additional configuration**
