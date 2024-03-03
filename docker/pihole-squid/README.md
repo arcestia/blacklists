@@ -12,7 +12,7 @@
 
     Login to the Pi-hole admin console:
     - Go to `Group Management` -> `Adlists`.
-    - Add `https://get.domainsblacklists.com/blacklist.txt` as a new list.
+    - Add `https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt` as a new list.
     
 5. Update Gravity Daily
 
