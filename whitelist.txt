@@ -286,7 +286,6 @@ businessinsider.com
 buzzfeed.com
 bydgoszcz.tvp.pl
 c-ctrip.com
-c.amazon-adsystem.com
 c.apple.com
 c.bing.com
 c.disquscdn.com
