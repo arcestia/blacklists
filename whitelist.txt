@@ -68,12 +68,6 @@ adminwebservice.microsoftonline.com
 adobe.com
 adobe.io
 adp.com
-ads-a-darwin.hulustream.com.akamaized.net
-ads-e-darwin.hulustream.com
-ads-fa-darwin.hulustream.com
-ads.julephosting.de
-ads.twitter.com
-ads.videoadex.com
 advanceautoparts.com
 adwords.google.com
 aeotec.com
@@ -120,10 +114,6 @@ amp-api-prd.bostonglobe.com
 amp-api-search-edge.apps-lb.itunes-apple.com.akadns.net
 amp-api-search-edge.apps.apple.com
 amplitude.com
-analytics.google.com
-analytics.twitter.com
-analyticsinsights-pa.googleapis.com
-analyticssearch-pa.googleapis.com
 android.clients.google.com
 androidforums.com
 anime-loads.org
