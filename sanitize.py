@@ -3,7 +3,7 @@ import tldextract
 from tqdm import tqdm
 
 # Pre-compiled regex pattern for FQDN validation
-fqdn_pattern = re.compile('^(?!-)[A-Za-z0-9-]{1,63}(?<!-)$')
+fqdn_pattern = re.compile(r'^(?!-)[A-Za-z0-9-]{1,63}(?<!-)$')
 
 def is_valid_fqdn(s):
     """Check if the string is a valid FQDN."""
@@ -14,12 +14,11 @@ def is_valid_fqdn(s):
         return False
     return all(fqdn_pattern.match(x) for x in s.split('.'))
 
-def remove_prefix(line, prefix):
-    """General function to remove specified prefix from a line."""
-    if line.startswith(prefix):
-        potential_fqdn = line[len(prefix):]
-        if is_valid_fqdn(potential_fqdn):
-            return potential_fqdn
+def remove_prefixes(line, prefixes):
+    """Remove specified prefixes from a line."""
+    for prefix in prefixes:
+        if line.startswith(prefix):
+            return line[len(prefix):].strip()
     return line
 
 def sanitize_line(line, rules):
@@ -34,13 +33,7 @@ def get_sanitization_rules():
     """Returns a list of sanitization rules."""
     return [
         lambda line: None if line.startswith("#") else line,       # Remove comment lines
-        lambda line: remove_prefix(line, "127.0.0.1"),             # Remove IP prefix 127.0.0.1 without space
-        lambda line: remove_prefix(line, "127.0.0.1 "),            # Remove IP prefix 127.0.0.1 with space
-        lambda line: remove_prefix(line, "0.0.0.0"),               # Remove IP prefix 0.0.0.0 without space
-        lambda line: remove_prefix(line, "0.0.0.0 "),              # Remove IP prefix 0.0.0.0 with space
-        lambda line: remove_prefix(line, "||"),                    # Remove double pipes
-        lambda line: remove_prefix(line, "http://"),               # Remove http prefix
-        lambda line: remove_prefix(line, "https://"),              # Remove https prefix
+        lambda line: remove_prefixes(line, ["127.0.0.1", "0.0.0.0", "||", "http://", "https://"]),  # Remove prefixes
         lambda line: line.rstrip('.'),                             # Remove trailing dot
         lambda line: line.lower()                                  # Convert to lowercase
     ]
@@ -61,10 +54,9 @@ def process_large_file(input_file_path, output_file_path):
     # Sort the unique domain names in alphabetical order
     sorted_unique_domains = sorted(unique_domains)
 
-    # Write the sorted unique domain names to the output file
+    # Batch write the sorted unique domain names to the output file
     with open(output_file_path, 'w') as outfile:
-        for domain in tqdm(sorted_unique_domains, desc="Writing"):
-            outfile.write(domain + '\n')
+        outfile.writelines(domain + '\n' for domain in tqdm(sorted_unique_domains, desc="Writing"))
 
 # Use this function to process your large file
 process_large_file('input.txt', 'output.txt')
