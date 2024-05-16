@@ -7,3 +7,5 @@ This project owes its existence to numerous dedicated blacklist creators such as
 and many more.
 
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
+
+Code improvements by [xRuffKez](https://github.com/xRuffKez).
