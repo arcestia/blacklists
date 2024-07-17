@@ -16,7 +16,7 @@ https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.t
 ## 📖 DNS filtering for dummies
 - Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md)
 ## 📈 At a glance
-![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-53-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3152369-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28098-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-53-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3152376-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28098-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ### Compatibility
 - **Windows**, **Mac**, **Linux** via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension ([Firefox](https://addons.mozilla.org/it/firefox/addon/ublock-origin/) or [others browsers](https://ublockorigin.com))
 - **iPhone** (Safari + DNS) via [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo)
