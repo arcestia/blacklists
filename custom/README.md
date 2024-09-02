@@ -10,3 +10,6 @@ Feel free to report new domains to block by [opening an issue](https://github.co
 
 ### Looking for DOH domains blacklist? 
 Check the [dibdot](https://github.com/dibdot/DoH-IP-blocklists/blob/master/doh-domains.txt) release, the best candidate so far!
+
+### Looking for AI domains blacklist? 
+Check the [uBO]([https://github.com/dibdot/DoH-IP-blocklists/blob/master/doh-domains.txt](https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/noai_hosts.txt)) release, the best candidate so far!
