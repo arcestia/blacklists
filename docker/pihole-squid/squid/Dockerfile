@@ -6,8 +6,12 @@ ENV DEBIAN_FRONTEND=non-interactive
 
 # Update system packages, install necessary tools, and clean up
 RUN apt-get update && \
-    apt-get install -y wget squid cron && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    apt-get install -y \
+    wget \
+    squid \
+    cron && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Setup Squid
 COPY squid.conf /etc/squid/squid.conf
