@@ -13,9 +13,7 @@
 https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 
-## 📖 DNS filtering for dummies
-- Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md)
-## 📈 At a glance
+
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795276181-ea44caeb6a6db48fdc262ac6?label=website) ![Static Badge](https://img.shields.io/badge/blacklists-56-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-2887221-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28106-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ### Compatibility
 - **Windows**, **Mac**, **Linux** via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension ([Firefox](https://addons.mozilla.org/it/firefox/addon/ublock-origin/) or [others browsers](https://ublockorigin.com))
@@ -33,6 +31,8 @@ https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.t
 - **Whitelist Capability**: [Submit one or more domains for whitelisting](https://github.com/fabriziosalmi/blacklists/issues/new/choose)
 - **Local Mirror**: Set up easily using the [Docker image](https://hub.docker.com/repository/docker/fabriziosalmi/blacklists/)
 ## 👨‍💻 Contribute
+
+- Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md) to better focus how to contribute to the project.
 
 - Propose additions or removals to the blacklist
 - Enhance blacklist or whitelist processing
