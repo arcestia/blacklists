@@ -13,6 +13,4 @@
 https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 
-## 📖 DNS filtering for dummies
-- Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md)
-## 📈 At a glance
+
