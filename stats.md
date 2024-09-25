@@ -1,38 +1,38 @@
 # Blacklist Statistics
 
-**Last Updated:** 1727132814.0
+**Last Updated:** 1727219188.0
 
 ## Overview
-- **Total Domains:** 2735416
-- **Domains with Numbers:** 896043
-- **Domains with Hyphens:** 610572
-- **Vowel/Consonant Ratio:** 16493378/33133097
+- **Total Domains:** 2738577
+- **Domains with Numbers:** 896889
+- **Domains with Hyphens:** 611514
+- **Vowel/Consonant Ratio:** 16513438/33177957
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1354992 |
-| .org | 234916 |
-| .net | 187493 |
-| .xyz | 65018 |
-| .ru | 64318 |
-| .top | 62540 |
-| .info | 49490 |
-| .pl | 49063 |
-| .io | 44826 |
-| .fr | 39705 |
+| .com | 1355802 |
+| .org | 234858 |
+| .net | 187522 |
+| .xyz | 65323 |
+| .ru | 64303 |
+| .top | 62715 |
+| .info | 49536 |
+| .pl | 49093 |
+| .io | 45004 |
+| .fr | 39769 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 161352 |
+| duckdns | 161336 |
 | 000webhostapp | 31023 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
-| doubleclick | 25516 |
+| doubleclick | 25534 |
 | no-ip | 24614 |
-| co | 20228 |
-| com | 19633 |
+| co | 20324 |
+| com | 19645 |
 | emltrk | 18108 |
 | forter | 16405 |
 
@@ -40,68 +40,68 @@
 | Subdomain | Count |
 | --------- | ----- |
 | www.vinted-pl-gj32d | 776 |
-| www.allegrolokalnie | 743 |
-| www.olx | 566 |
-| www.inpost | 279 |
+| www.allegrolokalnie | 748 |
+| www.olx | 570 |
+| www.inpost | 280 |
 | www.olx-pl | 258 |
 | secure.runescape | 199 |
 | www.booking | 194 |
 | olx.pl | 180 |
-| tr.news | 147 |
+| tr.news | 150 |
 | www.vinted-polska-rr124 | 137 |
 
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 175138 |
-| 16 | 171113 |
-| 18 | 158725 |
-| 17 | 158623 |
-| 22 | 150591 |
-| 20 | 150289 |
-| 15 | 144888 |
-| 21 | 137444 |
-| 14 | 133385 |
-| 23 | 121605 |
+| 19 | 175381 |
+| 16 | 171246 |
+| 18 | 159211 |
+| 17 | 158814 |
+| 22 | 150818 |
+| 20 | 150578 |
+| 15 | 144939 |
+| 21 | 137596 |
+| 14 | 133434 |
+| 23 | 121799 |
 
 ## Longest 10 Domains
 | Domain |
 | ------ |
-| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
 | macropuff.ir.babol-ads.ir.technogreen.ir.hoodestan.ir.pdade.net.maharatamoozi.ir.biores.ir.pbmarket.ir.shop-kala.ir.ayeroon.ir.kimia-choob.com.ov104-irnic.ir.coveri.ir.mobiletollab.com.lahzeh.tv.secureguard.tech.farahadaf.ir.yejadige.ir.tehraanvila.shop |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
+| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
 | maharatkart.ir.dumantarabar.com.taavon2-farsedu.ir.vacuumpou-ya.com.helikala.com.souli.ir.variz.me.javaherha.ir.mmpars-vnd.com.medisib.com.ojan.org.myheaven.ir.khanehma-hak.ir.wagg-on-ads.com.bor-hantanposh.ir.davamgroup.com.mecadium.ir.kalabama.website |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| cps.20tadoghq.comprocesssformseaming.appus3.20tadoghq.us3-rum.api.us3.20tadoghq.comproclient.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproduction-vonus.q.20tadoghq.appus3lookering.20tadoghq.consul.api.us3.process.datadoghq.com |
-| 20tadoghq.businessoping.appap1.20tadoghq.legacysomeurllatin.294cb.ap1.20tadoghq.0-13-9-app.ap1.20tadoghq.usage-legacysomeurlbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.294cb.ap1.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.ap1us3p.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comprocesslatguest.mgo.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.api.api.datadoghq.com |
+| 20tadoghq.comprocesssformseaming.aptssl.20tadoghq.us3-rum.api.us3.20tadoghq.comproclient.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproduction-1.q.20tadoghq.comproduction-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
 | 4.fo |
-| o.uk |
-| 1.vg |
 | v.ht |
-| 0.to |
+| x.co |
 | a.ki |
-| t.cl |
-| 5.cc |
-| r.de |
+| z.cn |
+| 1.vg |
 | j.pl |
+| e.vg |
+| 0.to |
+| p.de |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 4546144 |
-| e | 4008052 |
-| a | 3509894 |
-| c | 3495472 |
-| i | 2901494 |
-| t | 2875634 |
-| s | 2793845 |
-| r | 2694649 |
-| m | 2675598 |
-| n | 2660847 |
+| o | 4551155 |
+| e | 4012843 |
+| a | 3514703 |
+| c | 3498901 |
+| i | 2904775 |
+| t | 2879846 |
+| s | 2798850 |
+| r | 2697294 |
+| m | 2678106 |
+| n | 2663777 |
