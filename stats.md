@@ -1,48 +1,48 @@
 # Blacklist Statistics
 
-**Last Updated:** 1728428833.0
+**Last Updated:** 1728515278.0
 
 ## Overview
-- **Total Domains:** 3006718
-- **Domains with Numbers:** 1044755
-- **Domains with Hyphens:** 684720
-- **Vowel/Consonant Ratio:** 18367478/36733086
+- **Total Domains:** 2780646
+- **Domains with Numbers:** 928468
+- **Domains with Hyphens:** 627574
+- **Vowel/Consonant Ratio:** 16782043/33897603
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1500461 |
-| .org | 244640 |
-| .net | 205861 |
-| .ru | 69572 |
-| .xyz | 67528 |
-| .top | 66349 |
-| .info | 52327 |
-| .io | 50839 |
-| .pl | 48934 |
-| .fr | 39690 |
+| .com | 1378202 |
+| .org | 234974 |
+| .net | 190175 |
+| .xyz | 66817 |
+| .top | 64878 |
+| .ru | 63590 |
+| .info | 50092 |
+| .pl | 48607 |
+| .io | 47735 |
+| .fr | 39487 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 161272 |
-| bitcoin | 32910 |
-| 000webhostapp | 29078 |
-| co | 27752 |
+| duckdns | 161261 |
+| 000webhostapp | 29075 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
-| doubleclick | 25649 |
-| no-ip | 24653 |
-| binance | 23307 |
+| doubleclick | 25664 |
+| no-ip | 24613 |
+| co | 19993 |
 | emltrk | 19865 |
+| forter | 18963 |
+| com | 18614 |
 
 ## Top 10 Subdomains
 | Subdomain | Count |
 | --------- | ----- |
-| www.allegrolokalnie | 799 |
+| www.allegrolokalnie | 802 |
 | www.vinted-pl-gj32d | 776 |
 | www.olx | 639 |
-| www.olx-pl | 389 |
+| www.olx-pl | 390 |
 | www.inpost | 286 |
 | www.booking | 194 |
 | olx.pl | 180 |
@@ -53,55 +53,55 @@
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 193161 |
-| 16 | 183517 |
-| 18 | 175922 |
-| 17 | 172428 |
-| 22 | 165522 |
-| 20 | 165429 |
-| 15 | 155348 |
-| 21 | 152426 |
-| 14 | 141279 |
-| 23 | 132146 |
+| 19 | 177473 |
+| 16 | 172784 |
+| 18 | 159778 |
+| 17 | 159381 |
+| 22 | 153219 |
+| 20 | 151627 |
+| 15 | 146608 |
+| 21 | 139177 |
+| 14 | 134457 |
+| 23 | 122801 |
 
 ## Longest 10 Domains
 | Domain |
 | ------ |
-| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
-| macropuff.ir.babol-ads.ir.technogreen.ir.hoodestan.ir.pdade.net.maharatamoozi.ir.biores.ir.pbmarket.ir.shop-kala.ir.ayeroon.ir.kimia-choob.com.ov104-irnic.ir.coveri.ir.mobiletollab.com.lahzeh.tv.secureguard.tech.farahadaf.ir.yejadige.ir.tehraanvila.shop |
-| a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | maharatkart.ir.dumantarabar.com.taavon2-farsedu.ir.vacuumpou-ya.com.helikala.com.souli.ir.variz.me.javaherha.ir.mmpars-vnd.com.medisib.com.ojan.org.myheaven.ir.khanehma-hak.ir.wagg-on-ads.com.bor-hantanposh.ir.davamgroup.com.mecadium.ir.kalabama.website |
+| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
+| a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
+| macropuff.ir.babol-ads.ir.technogreen.ir.hoodestan.ir.pdade.net.maharatamoozi.ir.biores.ir.pbmarket.ir.shop-kala.ir.ayeroon.ir.kimia-choob.com.ov104-irnic.ir.coveri.ir.mobiletollab.com.lahzeh.tv.secureguard.tech.farahadaf.ir.yejadige.ir.tehraanvila.shop |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| 20tado18q.comprocesspoping.appus5.20tado18q.appus5eventsus5.agent.us5.20tado18q.0-15-9-app.us5.20tado18q.usage-comprocessbeta-intakes.us5.20tado18q.helm-20tado18q-iress.20tado18q.helm-20tado18q-stitchfix.20tado18q.consul.agent.us5.datadoghq.com |
-| 20tadoghq.comprocesssformseaming.appus3.20tadoghq.us3-rum.api.us3.20tadoghq.appus3events.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproduction-1.q.20tadoghq.comproduction-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.appapi.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comproduction-iressssvc.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.api.api.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.appapi.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comproduction-iressvzus.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.api.api.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
-| x.lt |
-| 9.je |
-| a.sg |
-| d.gp |
-| c.pl |
-| a.pl |
-| t.gp |
-| 4.ru |
+| a.ki |
+| x.co |
+| k.mr |
+| s.sh |
+| 1.vg |
+| t.cl |
+| o.uk |
+| 0.to |
 | p.de |
-| k.vu |
+| r.de |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 5099683 |
-| e | 4445599 |
-| c | 3985359 |
-| a | 3856705 |
-| i | 3276814 |
-| t | 3216321 |
-| s | 3130505 |
-| n | 3079198 |
-| m | 2967431 |
-| r | 2903396 |
+| o | 4610500 |
+| e | 4092214 |
+| c | 3595878 |
+| a | 3569375 |
+| i | 2948150 |
+| t | 2929055 |
+| s | 2907665 |
+| n | 2758317 |
+| r | 2723268 |
+| m | 2720171 |
