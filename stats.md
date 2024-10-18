@@ -1,107 +1,107 @@
 # Blacklist Statistics
 
-**Last Updated:** 1729120025.0
+**Last Updated:** 1729206463.0
 
 ## Overview
-- **Total Domains:** 2792531
-- **Domains with Numbers:** 944325
-- **Domains with Hyphens:** 636737
-- **Vowel/Consonant Ratio:** 16849329/34007542
+- **Total Domains:** 3047171
+- **Domains with Numbers:** 1067997
+- **Domains with Hyphens:** 698747
+- **Vowel/Consonant Ratio:** 18599962/37148750
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1375654 |
-| .org | 236772 |
-| .net | 189426 |
-| .xyz | 66811 |
-| .ru | 63269 |
-| .top | 62934 |
-| .io | 53580 |
-| .info | 50098 |
-| .pl | 48599 |
-| .fr | 39580 |
+| .com | 1508102 |
+| .org | 247143 |
+| .net | 206785 |
+| .ru | 70886 |
+| .xyz | 69585 |
+| .top | 66040 |
+| .io | 56709 |
+| .info | 53020 |
+| .pl | 49029 |
+| .fr | 39906 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 161303 |
-| 000webhostapp | 29075 |
+| duckdns | 161367 |
+| bitcoin | 32911 |
+| 000webhostapp | 29083 |
+| co | 27850 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
-| doubleclick | 25727 |
-| no-ip | 24613 |
+| doubleclick | 25741 |
+| no-ip | 24665 |
+| binance | 23328 |
 | emltrk | 19865 |
-| co | 19608 |
-| forter | 18963 |
-| com | 18299 |
 
 ## Top 10 Subdomains
 | Subdomain | Count |
 | --------- | ----- |
-| www.allegrolokalnie | 829 |
+| www.allegrolokalnie | 835 |
 | www.vinted-pl-gj32d | 776 |
-| www.olx | 684 |
-| www.olx-pl | 547 |
-| www.inpost | 288 |
+| www.olx | 689 |
+| www.olx-pl | 548 |
+| www.inpost | 289 |
 | www.booking | 194 |
 | olx.pl | 180 |
 | tr.news | 150 |
 | www.vinted-polska-rr124 | 137 |
-| www.emv1 | 133 |
+| login.microsoftonline | 128 |
 
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 177055 |
-| 16 | 171897 |
-| 18 | 158577 |
-| 17 | 158467 |
-| 22 | 152569 |
-| 20 | 151384 |
-| 15 | 146065 |
-| 21 | 138986 |
-| 14 | 133995 |
-| 23 | 123610 |
+| 19 | 194326 |
+| 16 | 184810 |
+| 18 | 176362 |
+| 17 | 173532 |
+| 20 | 166746 |
+| 22 | 166091 |
+| 15 | 156864 |
+| 21 | 153444 |
+| 14 | 142819 |
+| 23 | 133929 |
 
 ## Longest 10 Domains
 | Domain |
 | ------ |
 | maharatkart.ir.dumantarabar.com.taavon2-farsedu.ir.vacuumpou-ya.com.helikala.com.souli.ir.variz.me.javaherha.ir.mmpars-vnd.com.medisib.com.ojan.org.myheaven.ir.khanehma-hak.ir.wagg-on-ads.com.bor-hantanposh.ir.davamgroup.com.mecadium.ir.kalabama.website |
-| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
 | macropuff.ir.babol-ads.ir.technogreen.ir.hoodestan.ir.pdade.net.maharatamoozi.ir.biores.ir.pbmarket.ir.shop-kala.ir.ayeroon.ir.kimia-choob.com.ov104-irnic.ir.coveri.ir.mobiletollab.com.lahzeh.tv.secureguard.tech.farahadaf.ir.yejadige.ir.tehraanvila.shop |
+| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| 20tadoghq.comprocesspoping.appap1.20tadoghq.comprocesscal.agent.ap1.20tadoghq.0-13-9-app.ap1.20tadoghq.usage-comprocessbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-2-12a-9-app.20tadoghq.us3-login.agent.ap1.datadoghq.com |
-| 20tadoghq.comintplatformtreaming.appapi.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comproduction-iressssvc.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.api.api.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.ap1us3p.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comprocesslatguest.mgo.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.api.api.datadoghq.com |
+| 20tadoghq.comprocesspoping.appus3.20tadoghq.comprocesslatin.api.us3.20tadoghq.whm-domains.us3.20tadoghq.usage-comprocessbeta-p44s.us3.20tadoghq.comproduction-iress.20tadoghq.comproduction-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
-| k.mr |
-| 1.vg |
-| r.de |
-| t.cl |
+| f.gp |
+| x.cc |
+| k.ru |
+| 2.je |
 | 0.to |
-| z.cn |
-| p.de |
-| 5.cc |
-| e.vg |
-| a.ki |
+| r.ms |
+| o.uk |
+| d.am |
+| u.gp |
+| t.cl |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 4636079 |
-| e | 4115276 |
-| c | 3591233 |
-| a | 3565636 |
-| i | 2970284 |
-| t | 2948654 |
-| s | 2913207 |
-| n | 2766045 |
-| m | 2729075 |
-| r | 2727793 |
+| o | 5168344 |
+| e | 4508874 |
+| c | 4008515 |
+| a | 3889081 |
+| i | 3330154 |
+| t | 3262884 |
+| s | 3161911 |
+| n | 3113644 |
+| m | 3001938 |
+| r | 2933191 |
