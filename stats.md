@@ -1,49 +1,49 @@
 # Blacklist Statistics
 
-**Last Updated:** 1729897658.0
+**Last Updated:** 1729984002.0
 
 ## Overview
-- **Total Domains:** 3038908
-- **Domains with Numbers:** 1067178
-- **Domains with Hyphens:** 694659
-- **Vowel/Consonant Ratio:** 18595067/37017338
+- **Total Domains:** 2809506
+- **Domains with Numbers:** 949818
+- **Domains with Hyphens:** 636044
+- **Vowel/Consonant Ratio:** 16982423/34141985
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1502715 |
-| .org | 247847 |
-| .net | 204589 |
-| .ru | 71324 |
-| .xyz | 70309 |
-| .top | 62964 |
-| .io | 55600 |
-| .info | 52661 |
-| .pl | 48642 |
-| .fr | 40233 |
+| .com | 1382555 |
+| .org | 238386 |
+| .net | 188642 |
+| .xyz | 68383 |
+| .ru | 64602 |
+| .top | 60632 |
+| .io | 52517 |
+| .info | 50268 |
+| .pl | 48308 |
+| .fr | 40048 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 160995 |
-| bitcoin | 32910 |
-| 000webhostapp | 29024 |
-| co | 28217 |
+| duckdns | 160988 |
+| 000webhostapp | 29021 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
-| doubleclick | 25795 |
-| no-ip | 24653 |
-| binance | 23312 |
-| com | 20771 |
+| doubleclick | 25809 |
+| no-ip | 24613 |
+| com | 20372 |
+| co | 20276 |
+| emltrk | 19865 |
+| forter | 18964 |
 
 ## Top 10 Subdomains
 | Subdomain | Count |
 | --------- | ----- |
-| www.allegrolokalnie | 851 |
+| www.allegrolokalnie | 853 |
 | www.vinted-pl-gj32d | 776 |
-| www.olx | 715 |
+| www.olx | 717 |
 | www.olx-pl | 661 |
-| www.inpost | 294 |
+| www.inpost | 295 |
 | www.booking | 194 |
 | olx.pl | 180 |
 | tr.news | 151 |
@@ -53,16 +53,16 @@
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 193791 |
-| 16 | 183861 |
-| 18 | 175557 |
-| 17 | 173176 |
-| 20 | 166169 |
-| 22 | 165331 |
-| 15 | 156410 |
-| 21 | 153001 |
-| 14 | 142130 |
-| 23 | 133085 |
+| 19 | 178082 |
+| 16 | 173055 |
+| 17 | 159941 |
+| 18 | 159327 |
+| 22 | 152685 |
+| 20 | 152264 |
+| 15 | 147410 |
+| 21 | 139795 |
+| 14 | 135021 |
+| 23 | 123766 |
 
 ## Longest 10 Domains
 | Domain |
@@ -76,32 +76,32 @@
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | 20tadoghq.comprocesssformseaming.appus3.20tadoghq.us3-rum.api.us3.20tadoghq.appus3events.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproductptn-1.q.20tadoghq.comproductptn-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
-| 20tadoghq.comprocesssformseaming.appus3.20tadoghq.us3-rum.api.us3.20tadoghq.appus3events.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproduction-1.q.20tadoghq.comproduction-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
+| 20tadoghq.comprocesspoping.appap1.20tadoghq.comprocesslatin.agent.ap1.20tadoghq.merchantagent.ap1.20tadoghq.usage-comprocessbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.agent.ap1.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
-| d.to |
-| o.be |
-| z.cn |
+| x.co |
+| 4.fo |
+| s.sh |
+| a.ki |
 | 1.vg |
-| k.mr |
-| f.gp |
-| u.ms |
-| k.is |
-| c.pl |
-| m.gp |
+| z.cn |
+| o.uk |
+| p.de |
+| e.vg |
+| j.pl |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 5155032 |
-| e | 4504483 |
-| c | 4011635 |
-| a | 3903908 |
-| i | 3332480 |
-| t | 3257379 |
-| s | 3154627 |
-| n | 3114163 |
-| m | 2998756 |
-| r | 2941743 |
+| o | 4664082 |
+| e | 4143935 |
+| c | 3620868 |
+| a | 3610109 |
+| i | 2996575 |
+| t | 2965738 |
+| s | 2925553 |
+| n | 2788323 |
+| r | 2758291 |
+| m | 2749326 |
