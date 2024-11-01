@@ -7,9 +7,9 @@ ENV DEBIAN_FRONTEND=non-interactive
 # Update system packages, install necessary tools, and clean up
 RUN apt-get update && \
     apt-get install -y \
-    wget \
+    cron \
     squid \
-    cron && \
+    wget && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
