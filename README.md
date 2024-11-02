@@ -8,6 +8,8 @@
 - Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
 - Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
 - Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
+
+## ✅ Direct link
 - Pi-Hole, AdGuard, uBlock Origin: 
 ```
 https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
