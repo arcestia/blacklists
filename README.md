@@ -5,16 +5,19 @@
 > _"Building a service on top of a regularly updated blacklist can provide immense value, not only for individual internet users but also for businesses and cybersecurity professionals. Whatever service you choose to build, ensure it's user-friendly, reliable, and secure."_
 
 ## ✅ Downloads
-- Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
-- Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
-- Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 - Pi-Hole, AdGuard, uBlock Origin: 
 ```
 https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 
+- Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
+- Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
+- Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
 
-![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3179487-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28106-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+
+
+
+![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-2927420-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28107-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ### Compatibility
 - **Windows**, **Mac**, **Linux** via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension ([Firefox](https://addons.mozilla.org/it/firefox/addon/ublock-origin/) or [others browsers](https://ublockorigin.com))
 - **iPhone** (Safari + DNS) via [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo)
@@ -31,8 +34,6 @@ https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.t
 - **Whitelist Capability**: [Submit one or more domains for whitelisting](https://github.com/fabriziosalmi/blacklists/issues/new/choose)
 - **Local Mirror**: Set up easily using the [Docker image](https://hub.docker.com/repository/docker/fabriziosalmi/blacklists/)
 ## 👨‍💻 Contribute
-
-- Please read the [full story](https://github.com/fabriziosalmi/blacklists/blob/main/docs/Introduction.md) to better focus how to contribute to the project.
 
 - Propose additions or removals to the blacklist
 - Enhance blacklist or whitelist processing
@@ -68,5 +69,3 @@ Code improvements by [xRuffKez](https://github.com/xRuffKez).
 - Improve websites
 ---
 ![Static Badge](https://img.shields.io/badge/DomainsBlacklists-For_a_safer_digital_experience-00ce00?style=for-the-badge)
-
-[Supported by donators](https://www.buymeacoffee.com/fabriziosac)
