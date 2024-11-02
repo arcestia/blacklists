@@ -8,15 +8,13 @@
 - Squid: **[blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt)** 
 - Unbound: **[unbound_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt)** 
 - Bind, PowerDNS (RPZ): **[rpz_blacklist.txt](https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt)** 
-
-## ✅ Direct link
 - Pi-Hole, AdGuard, uBlock Origin: 
 ```
 https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt
 ```
 
 
-![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3179439-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28106-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
+![Static Badge](https://img.shields.io/badge/blacklists-60-000000) ![Static Badge](https://img.shields.io/badge/blacklisted-3179487-cc0000) ![Static Badge](https://img.shields.io/badge/whitelisted-2242-00CC00) ![Static Badge](https://img.shields.io/badge/streaming_blacklist-28106-000000) ![GitHub issues](https://img.shields.io/github/issues/fabriziosalmi/blacklists)
 ### Compatibility
 - **Windows**, **Mac**, **Linux** via the [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) browser extension ([Firefox](https://addons.mozilla.org/it/firefox/addon/ublock-origin/) or [others browsers](https://ublockorigin.com))
 - **iPhone** (Safari + DNS) via [AdGuard Pro for IOS](https://download.adguard.com/d/18672/ios-pro?exid=3ail29lmsdyc84s84c0gkosgo)
