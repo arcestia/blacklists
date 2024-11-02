@@ -1,4 +1,3 @@
-5f22d76e220e1.streamlock.net
 0123movies.com
 123movies.is
 123movies.net
@@ -17,6 +16,7 @@
 1movies.is
 21boxfilm.com
 365livesport.com
+5f22d76e220e1.streamlock.net
 5movies.cloud
 5movies.to
 6streams.tv
