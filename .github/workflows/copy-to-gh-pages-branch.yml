@@ -1,8 +1,6 @@
 name: Copy Release Blacklist to repo
 
 on:
-  schedule:
-    - cron: '0 * * * *' # Run every hour, you can adjust the schedule as needed
   workflow_dispatch:
   release:
     types:
