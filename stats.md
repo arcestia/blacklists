@@ -1,107 +1,107 @@
 # Blacklist Statistics
 
-**Last Updated:** 1731193617.0
+**Last Updated:** 1731280002.0
 
 ## Overview
-- **Total Domains:** 2995306
-- **Domains with Numbers:** 1058417
-- **Domains with Hyphens:** 685062
-- **Vowel/Consonant Ratio:** 18340581/36592994
+- **Total Domains:** 2816918
+- **Domains with Numbers:** 946565
+- **Domains with Hyphens:** 631083
+- **Vowel/Consonant Ratio:** 16985469/34269361
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1470517 |
-| .org | 245151 |
-| .net | 199711 |
-| .xyz | 70606 |
-| .top | 68055 |
-| .ru | 61865 |
-| .io | 55055 |
-| .info | 51338 |
-| .pl | 49135 |
+| .com | 1376812 |
+| .org | 237988 |
+| .net | 188374 |
+| .xyz | 68011 |
+| .top | 65201 |
+| .ru | 56970 |
+| .io | 52711 |
+| .info | 49683 |
+| .pl | 48093 |
 | .fr | 39958 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 161926 |
-| bitcoin | 32910 |
-| 000webhostapp | 28129 |
+| duckdns | 161920 |
+| 000webhostapp | 28099 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
-| doubleclick | 25879 |
-| no-ip | 24614 |
-| binance | 23325 |
-| co | 20320 |
-| emltrk | 19865 |
+| doubleclick | 25901 |
+| no-ip | 24613 |
+| emltrk | 19895 |
+| com | 19725 |
+| co | 19540 |
+| forter | 19036 |
 
 ## Top 10 Subdomains
 | Subdomain | Count |
 | --------- | ----- |
-| www.allegrolokalnie | 896 |
+| www.allegrolokalnie | 874 |
 | www.vinted-pl-gj32d | 776 |
-| www.olx-pl | 743 |
-| www.olx | 741 |
-| www.inpost | 303 |
-| www.booking | 194 |
+| www.olx-pl | 730 |
+| www.olx | 728 |
+| www.inpost | 301 |
+| www.booking | 182 |
 | olx.pl | 180 |
 | tr.news | 152 |
 | www.vinted-polska-rr124 | 137 |
-| www.inpost-pl | 125 |
+| www.inpost-pl | 124 |
 
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 192581 |
-| 16 | 178036 |
-| 18 | 173421 |
-| 17 | 171743 |
-| 22 | 165949 |
-| 20 | 165198 |
-| 21 | 151707 |
-| 15 | 151420 |
-| 14 | 138996 |
-| 23 | 133644 |
+| 19 | 180979 |
+| 16 | 170811 |
+| 17 | 161338 |
+| 18 | 161277 |
+| 20 | 154813 |
+| 22 | 154401 |
+| 15 | 145728 |
+| 21 | 141738 |
+| 14 | 135383 |
+| 23 | 125207 |
 
 ## Longest 10 Domains
 | Domain |
 | ------ |
-| macropuff.ir.babol-ads.ir.technogreen.ir.hoodestan.ir.pdade.net.maharatamoozi.ir.biores.ir.pbmarket.ir.shop-kala.ir.ayeroon.ir.kimia-choob.com.ov104-irnic.ir.coveri.ir.mobiletollab.com.lahzeh.tv.secureguard.tech.farahadaf.ir.yejadige.ir.tehraanvila.shop |
-| maharatkart.ir.dumantarabar.com.taavon2-farsedu.ir.vacuumpou-ya.com.helikala.com.souli.ir.variz.me.javaherha.ir.mmpars-vnd.com.medisib.com.ojan.org.myheaven.ir.khanehma-hak.ir.wagg-on-ads.com.bor-hantanposh.ir.davamgroup.com.mecadium.ir.kalabama.website |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| shahre-ajibiye.work.u-k.cloudflare.com.do-yo.want-to.clash-with.this.www.microsoft.com.there-is-no.dlate-fine.google.comwww.dynu.com.count-with-me.cyou.com.now-sudo.rm-rf.ddns.net.we-are-here.again-to-fight.everyone.i-am.the-internet.cleantechnica.space |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| 20tadoghq.comprocesssformseaming.appus3.20tadoghq.us3-rum.api.us3.20tadoghq.appus3events.us3.20tadoghq.usage-comprocessbeta-intakes.us3.20tadoghq.comproductptn-1.q.20tadoghq.comproductptn-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
-| sayncdiscover.ad.shoppingcart.us-east-1.shipt-test38.comweb3789-neocovidev.sayncdiscover.ad.shoppingcart.us-east-1.shipt.comwww.apollon.neocovidev.sayncdiscover.ad.shoppingcart.us-east-1.shipt.comthanossidecar-0.ml.us-central1.staging.shipt.com |
+| 20tadoghq.comprocesssformseaming.appus3.20tadoghq.jobs.api.us3.20tadoghq.comproclient.us3.20tadoghq.usage-comprocessbeta-p44s.us3.20tadoghq.comproductclan-vonus.q.20tadoghq.comproductclan-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
+| 20tadoghq.comprocesspoping.win7.20tadoghq.comprocesslatin.agent.us5.20tadoghq.0-13-9-app.us5.20tadoghq.usage-ap1us3pcomproclient-urls.us5.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.agent.us5.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.appapi.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comproduction-iress.20tadoghq.comproduction-stitchfix.20tadoghq.p-api.lnd-api.api.datadoghq.com |
+| 20tadoghq.businessoping.appap1.20tadoghq.legacybcs-us3latin.294cb.ap1.20tadoghq.0-13-9-app.ap1.20tadoghq.usage-legacybcs-us3beta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.294cb.ap1.datadoghq.com |
+| 20tadoghq.comintplatformtreaming.appapi.20tadoghq.comprocesslatin.api.api.20tadoghq.nautilusll-sandbox.api.20tadoghq.usage-aptsrofiles.api.20tadoghq.comproduction-iress.20tadoghq.comproduction-stitchfix.slack-gateway.p-api.api.api.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
-| 1.lv |
-| 4.lt |
-| e.ms |
-| x.cc |
-| 7.je |
+| 4.fo |
+| 5.cc |
 | k.mr |
-| j.gp |
+| s.sh |
+| o.uk |
+| a.ki |
+| t.cl |
 | 0.to |
-| k.is |
-| h.gs |
+| 1.vg |
+| p.de |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 5079729 |
-| e | 4460916 |
-| c | 3932009 |
-| a | 3851762 |
-| i | 3283319 |
-| t | 3214368 |
-| s | 3139412 |
-| n | 3073314 |
-| m | 2940269 |
-| r | 2883275 |
+| o | 4667064 |
+| e | 4151477 |
+| a | 3613537 |
+| c | 3612038 |
+| i | 2988456 |
+| t | 2964210 |
+| s | 2945724 |
+| n | 2791387 |
+| m | 2743872 |
+| r | 2743640 |
