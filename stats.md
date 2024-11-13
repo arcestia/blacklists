@@ -1,48 +1,48 @@
 # Blacklist Statistics
 
-**Last Updated:** 1731366411.0
+**Last Updated:** 1731452815.0
 
 ## Overview
-- **Total Domains:** 3057176
-- **Domains with Numbers:** 1066908
-- **Domains with Hyphens:** 691565
-- **Vowel/Consonant Ratio:** 18659210/37267160
+- **Total Domains:** 2808216
+- **Domains with Numbers:** 946678
+- **Domains with Hyphens:** 630298
+- **Vowel/Consonant Ratio:** 16952685/34186110
 
 ## Top 10 TLDs
 | TLD | Count |
 | --- | ----- |
-| .com | 1502547 |
-| .org | 248080 |
-| .net | 205100 |
-| .xyz | 68974 |
-| .top | 67413 |
-| .ru | 63828 |
-| .io | 55248 |
-| .info | 52405 |
-| .pl | 48504 |
-| .fr | 40259 |
+| .com | 1369578 |
+| .org | 237768 |
+| .net | 187768 |
+| .xyz | 67595 |
+| .top | 65002 |
+| .ru | 57006 |
+| .io | 52175 |
+| .info | 49589 |
+| .pl | 48101 |
+| .fr | 39973 |
 
 ## Top 10 Second-Level Domains (SLDs)
 | SLD | Count |
 | --- | ----- |
-| duckdns | 161894 |
-| bitcoin | 32910 |
-| 000webhostapp | 28110 |
-| co | 27545 |
+| duckdns | 161896 |
+| 000webhostapp | 28099 |
 | gaipuzui | 26931 |
 | courtoyz | 26892 |
 | doubleclick | 25908 |
-| no-ip | 24665 |
-| binance | 23328 |
-| com | 20663 |
+| no-ip | 24613 |
+| emltrk | 19865 |
+| com | 19777 |
+| co | 19583 |
+| forter | 19056 |
 
 ## Top 10 Subdomains
 | Subdomain | Count |
 | --------- | ----- |
-| www.allegrolokalnie | 882 |
+| www.allegrolokalnie | 888 |
 | www.vinted-pl-gj32d | 776 |
-| www.olx-pl | 732 |
-| www.olx | 729 |
+| www.olx-pl | 733 |
+| www.olx | 732 |
 | www.inpost | 302 |
 | www.booking | 182 |
 | olx.pl | 180 |
@@ -53,16 +53,16 @@
 ## Top 10 Domain Lengths
 | Length | Count |
 | ------ | ----- |
-| 19 | 197536 |
-| 16 | 182546 |
-| 18 | 178159 |
-| 17 | 175157 |
-| 20 | 169590 |
-| 22 | 167524 |
-| 21 | 155768 |
-| 15 | 155226 |
-| 14 | 143030 |
-| 23 | 134996 |
+| 19 | 180230 |
+| 16 | 169900 |
+| 17 | 160349 |
+| 18 | 160243 |
+| 20 | 154404 |
+| 22 | 154102 |
+| 15 | 144639 |
+| 21 | 141636 |
+| 14 | 134520 |
+| 23 | 124932 |
 
 ## Longest 10 Domains
 | Domain |
@@ -74,34 +74,34 @@
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
 | ir.teknocharkh110rezaei.com.shahinorkideh.com.zeinab.ir.smbt.ir.masjedemammahdi.com.narjeslib.com.zeebatarin.ir.ranginehprint.ir.day-ravan.com.vivadatees.ir.vpsfori.ir.hamann-motorsports.ir.qazvin-ads.ir.dayagro.com.sorur.net.felafelabadan.online |
 | a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.myniceposts.com |
-| 20tadoghq.auth-appoping.appus5.20tadoghq.comprocesslatin.agent.us5.20tadoghq.0-15-9-app.us5.20tadoghq.usage-comprocessbeta-5-21-2-app.us5.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.agent.us5.datadoghq.com |
-| 20tadoghq.comprocesspoping.appap1.20tadoghq.comprocesscal.agent.ap1.20tadoghq.0-wheels-9-app.ap1.20tadoghq.usage-comprocessbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-2-18-9-app.20tadoghq.consul.agent.ap1.datadoghq.com |
-| 20tadoghq.comprocesspoping.appap1.20tadoghq.comprocesslatin.2v14cb.ap1.20tadoghq.0-13-v1-app.ap1.20tadoghq.usage-comprocessbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.2v14cb.ap1.datadoghq.com |
+| 20tadoghq.comprocesspoping.appap1.20tadoghq.comprocesslatin.agent.ap1.20tadoghq.merchantagent.ap1.20tadoghq.usage-comprocessbeta-urls.ap1.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-stitchfix.20tadoghq.consul.agent.ap1.datadoghq.com |
+| 20tadoghq.comafreebsdtreaming.appus3.20tadoghq.8-9-8-app.api.us3.20tadoghq.comproclient.us3.20tadoghq.usage-comprocessbeta-platform.us3.20tadoghq.learnablerofile.q.20tadoghq.comproduction-stitchfix.20tadoghq.consul.api.us3.process.datadoghq.com |
+| 20tadoghq.comprocesspoping.appus5.20tadoghq.comprocesslatin.agent.us5.20tadoghq.0-15-9-app.us5.20tadoghq.usage-comprocessbeta-intakes.us5.20tadoghq.helm-20tadoghq-iress.20tadoghq.helm-20tadoghq-lab-logs.20tadoghq.logswww.agent.us5.datadoghq.com |
 
 ## Shortest 10 Domains
 | Domain |
 | ------ |
-| p.cx |
-| o.uk |
-| t.cx |
-| s.to |
-| h.vu |
-| k.gp |
-| m.lt |
-| h.gp |
-| r.ms |
-| 0.ru |
+| 0.to |
+| x.co |
+| z.cn |
+| r.de |
+| t.cl |
+| j.pl |
+| p.de |
+| 1.vg |
+| a.ki |
+| k.mr |
 
 ## Top 10 Characters in Domain Names
 | Character | Count |
 | --------- | ----- |
-| o | 5178133 |
-| e | 4527528 |
-| c | 4015581 |
-| a | 3921902 |
-| i | 3332237 |
-| t | 3264682 |
-| s | 3183999 |
-| n | 3126327 |
-| m | 3001106 |
-| r | 2937458 |
+| o | 4652963 |
+| e | 4145144 |
+| a | 3611100 |
+| c | 3601450 |
+| i | 2981624 |
+| t | 2958281 |
+| s | 2942124 |
+| n | 2784747 |
+| r | 2739079 |
+| m | 2734478 |
