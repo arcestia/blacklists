@@ -3,27 +3,22 @@ name: Test new gen
 on:
   schedule:
     - cron: '0 * * * *'
+    
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
+  contents: write  # Adjusted for release creation
   id-token: write
 
 jobs:
   Generate-Blacklist:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Git Configurations
-      run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "github-actions[bot]"
     - name: Check out repository code
       uses: actions/checkout@v4
       with:
         fetch-depth: 1  # Fetch all history for completeness
         ref: main
-        token: ${{ secrets.PAT }}
 
     - name: Generate blacklist
       run: sudo /bin/bash generate_fqdn_v2.sh # output: all.fqdn.blacklist
@@ -67,10 +62,6 @@ jobs:
         asset_path: ./current/blacklist.txt
         asset_name: blacklist.txt
         asset_content_type: text/plain
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
-          
+
     - name: Clean up
       run: rm -r current
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
