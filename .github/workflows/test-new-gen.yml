@@ -63,6 +63,8 @@ jobs:
         asset_path: ./current/blacklist.txt
         asset_name: blacklist.txt
         asset_content_type: text/plain
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
 
     - name: Clean up
       run: rm -r current
