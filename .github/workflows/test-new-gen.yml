@@ -34,7 +34,7 @@ jobs:
       run: |
         count=$(wc -l < current/blacklist.txt)
         echo "Number of domains: $count"
-        echo "::set-output name=count::$count"
+        echo "count=$count" >> $GITHUB_OUTPUT
 
     - name: Delete Release if Exists
       run: |
