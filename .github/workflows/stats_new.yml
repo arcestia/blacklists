@@ -28,7 +28,7 @@ jobs:
       # Run the blacklist stats script
       - name: Run blacklist stats script
         run: |
-          python3 blacklist_stats.py > stats.md
+          python3 stats_new.py > stats.md
 
       # Commit the new stats.md to the repository
       - name: Commit and push stats.md
