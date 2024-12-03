@@ -1,0 +1,40 @@
+name: Blacklist Stats
+
+on:
+  schedule:
+    - cron: '10 * * * *'  # Run every hour
+    
+jobs:
+  generate_stats:
+    runs-on: ubuntu-latest  # Using Ubuntu as the runner
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Install dependencies (e.g., requests)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      # Run the blacklist stats script
+      - name: Run blacklist stats script
+        run: |
+          python3 blacklist_stats.py > stats.md
+
+      # Commit the new stats.md to the repository
+      - name: Commit and push stats.md
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "GitHub Actions"
+          author_email: "actions@github.com"
+          message: "Update stats.md"
+          add: "stats.md"
