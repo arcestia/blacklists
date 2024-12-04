@@ -5,19 +5,19 @@ Blacklist saved to blacklist.txt.
 Error: Unable to retrieve previous blacklist. Ensure this is a git repository with history.
 
 === Blacklist Statistics ===
-Total Domains: 2927365
-Unique Domains: 2927365
-Added Domains Since Last Version: 2927365
+Total Domains: 3135190
+Unique Domains: 3135190
+Added Domains Since Last Version: 3135190
 Removed Domains Since Last Version: 0
 
 Top-Level Domain Distribution:
-  .com: 1419646
-  .org: 241764
-  .net: 193257
-  .top: 70846
-  .xyz: 69441
-  .ru: 68641
-  .io: 55311
-  .info: 50375
-  .pl: 48828
-  .fr: 41015
+  .com: 1535637
+  .org: 250960
+  .net: 205778
+  .top: 73095
+  .ru: 73008
+  .xyz: 70731
+  .io: 58562
+  .info: 51884
+  .pl: 49083
+  .fr: 41205
