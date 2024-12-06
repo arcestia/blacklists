@@ -1,8 +1,6 @@
 ## 🗓️ Roadmap
 
-2024
+2025
 
 - Improve blacklist
 - Improve whitelist
-- Domain ranking service
-- Improve websites
