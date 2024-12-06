@@ -21,7 +21,7 @@ jobs:
         ref: main
 
     - name: Generate blacklist
-      run: sudo /bin/bash generate_fqdn_v2.sh # output: all.fqdn.blacklist
+      run: sudo /bin/bash generate.sh # output: all.fqdn.blacklist
 
     - name: Extract current blacklist.txt
       run: |
