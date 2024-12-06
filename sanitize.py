@@ -73,64 +73,64 @@ def process_large_file(input_file_path: str, output_file_path: str, chunk_size: 
     # Get number of CPU cores (leave one core free for system processes)
     num_processes = max(1, mp.cpu_count() - 1)
     
-    file_size = get_file_size(input_file_path)
-    unique_domains: Set[str] = set()
-    
-    # Use memory mapping for efficient file reading
-    with open(input_file_path, 'r') as infile:
-        mm = mmap.mmap(infile.fileno(), 0, access=mmap.ACCESS_READ)
+    try:
+        file_size = get_file_size(input_file_path)
+        unique_domains: Set[str] = set()
         
-        # Create process pool
-        with mp.Pool(num_processes) as pool:
-            # Process file in chunks
-            chunks = []
-            current_chunk = []
+        # Use memory mapping for efficient file reading
+        with open(input_file_path, 'r') as infile:
+            mm = mmap.mmap(infile.fileno(), 0, access=mmap.ACCESS_READ)
             
-            # Use tqdm to show progress
-            with tqdm(total=file_size, desc="Reading file") as pbar:
-                for line in iter(mm.readline, b""):
-                    try:
-                        decoded_line = line.decode('utf-8')
-                        current_chunk.append(decoded_line)
-                        
-                        if len(current_chunk) >= chunk_size:
-                            chunks.append(current_chunk)
-                            current_chunk = []
+            # Create process pool
+            with mp.Pool(num_processes) as pool:
+                # Process file in chunks
+                chunks = []
+                current_chunk = []
+                
+                # Use tqdm to show progress
+                with tqdm(total=file_size, desc="Reading file") as pbar:
+                    for line in iter(mm.readline, b""):
+                        try:
+                            decoded_line = line.decode('utf-8')
+                            current_chunk.append(decoded_line)
                             
-                        pbar.update(len(line))
-                    except UnicodeDecodeError:
-                        continue
-            
-            # Add remaining lines
-            if current_chunk:
-                chunks.append(current_chunk)
-            
-            # Process chunks in parallel
-            with tqdm(total=len(chunks), desc="Processing chunks") as pbar:
-                for result in pool.imap_unordered(process_chunk, chunks):
-                    unique_domains.update(result)
-                    pbar.update(1)
-    
-    # Sort the unique domain names in alphabetical order (kept exactly as original)
-    sorted_unique_domains = sorted(unique_domains)
-    
-    # Write results in batches
-    batch_size = 10000
-    with open(output_file_path, 'w') as outfile:
-        with tqdm(total=len(sorted_unique_domains), desc="Writing results") as pbar:
-            for i in range(0, len(sorted_unique_domains), batch_size):
-                batch = sorted_unique_domains[i:i + batch_size]
-                outfile.writelines(f"{domain}\n" for domain in batch)
-                pbar.update(len(batch))
+                            if len(current_chunk) >= chunk_size:
+                                chunks.append(current_chunk)
+                                current_chunk = []
+                                
+                            pbar.update(len(line))
+                        except UnicodeDecodeError:
+                            continue
+                
+                # Add remaining lines
+                if current_chunk:
+                    chunks.append(current_chunk)
+                
+                # Process chunks in parallel
+                with tqdm(total=len(chunks), desc="Processing chunks") as pbar:
+                    for result in pool.imap_unordered(process_chunk, chunks):
+                        unique_domains.update(result)
+                        pbar.update(1)
+        
+        # Sort the unique domain names in alphabetical order (kept exactly as original)
+        sorted_unique_domains = sorted(unique_domains)
+        
+        # Write results in batches
+        batch_size = 10000
+        with open(output_file_path, 'w') as outfile:
+            with tqdm(total=len(sorted_unique_domains), desc="Writing results") as pbar:
+                for i in range(0, len(sorted_unique_domains), batch_size):
+                    batch = sorted_unique_domains[i:i + batch_size]
+                    outfile.writelines(f"{domain}\n" for domain in batch)
+                    pbar.update(len(batch))
+    except Exception as e:
+        print(f"Error processing file: {str(e)}")
+        raise
 
+# Default behavior matches original script
 if __name__ == "__main__":
-    import argparse
-    
-    parser = argparse.ArgumentParser(description="Sanitize and deduplicate domain names from a file")
-    parser.add_argument("input_file", help="Path to input file")
-    parser.add_argument("output_file", help="Path to output file")
-    parser.add_argument("--chunk-size", type=int, default=50000, help="Number of lines to process in each chunk")
-    
-    args = parser.parse_args()
-    
-    process_large_file(args.input_file, args.output_file, args.chunk_size)
+    try:
+        process_large_file('input.txt', 'output.txt')
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        exit(1)
