@@ -49,23 +49,14 @@ and many more.
 For a full list, check the [complete blacklists URLs](https://github.com/fabriziosalmi/blacklists/blob/main/blacklists.fqdn.urls).
 
 Code improvements by [xRuffKez](https://github.com/xRuffKez).
-## 👨‍💻 Fixing..
-- Wiki update
-- Improve implementation docs
-- Worst domains hunting
-  
 ## 👨‍💻 Testing
 
 - Machine learning to predict bad domains and rank all domains
-- Firefox extension site checker
-- Resolving ip addresses to fqdns (ip blacklists, CrowdSec and more) and create custom lists
 ## 🗓️ Roadmap
 
-2024
+2025
 
 - Improve blacklist
 - Improve whitelist
-- Domain ranking service
-- Improve websites
 ---
 ![Static Badge](https://img.shields.io/badge/DomainsBlacklists-For_a_safer_digital_experience-00ce00?style=for-the-badge)
