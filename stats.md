@@ -11,12 +11,12 @@ Added Domains Since Last Version: 282,542
 Removed Domains Since Last Version: 162,946
 
 Top-Level Domain Distribution:
-  .com: 1,521,033
+  .com: 1,521,032
   .org: 251,295
   .net: 211,478
   .ru: 75,848
   .top: 74,856
-  .xyz: 72,278
+  .xyz: 72,279
   .io: 57,844
   .info: 52,779
   .pl: 49,240
