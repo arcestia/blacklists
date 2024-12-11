@@ -5,19 +5,19 @@ Blacklist saved to blacklist.txt.
 Previous blacklist saved to previous_blacklist.txt.
 
 === Blacklist Statistics ===
-Total Domains: 2,857,493
-Unique Domains: 2,857,493
-Added Domains Since Last Version: 290,928
-Removed Domains Since Last Version: 455,351
+Total Domains: 2,859,784
+Unique Domains: 2,859,784
+Added Domains Since Last Version: 293,216
+Removed Domains Since Last Version: 455,348
 
 Top-Level Domain Distribution:
-  .com: 1,365,601
-  .org: 241,026
-  .net: 193,791
-  .top: 69,970
-  .xyz: 69,361
-  .ru: 68,561
-  .io: 55,816
-  .info: 49,456
+  .com: 1,366,141
+  .org: 241,082
+  .net: 193,826
+  .top: 70,331
+  .xyz: 69,403
+  .ru: 68,570
+  .io: 56,142
+  .info: 49,482
   .pl: 48,855
-  .fr: 41,101
+  .fr: 41,105
