@@ -5,9 +5,9 @@ Blacklist saved to blacklist.txt.
 Previous blacklist saved to previous_blacklist.txt.
 
 === Blacklist Statistics ===
-Total Domains: 2,857,391
-Unique Domains: 2,857,391
-Added Domains Since Last Version: 290,826
+Total Domains: 2,857,394
+Unique Domains: 2,857,394
+Added Domains Since Last Version: 290,829
 Removed Domains Since Last Version: 455,351
 
 Top-Level Domain Distribution:
