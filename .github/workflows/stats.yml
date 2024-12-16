@@ -3,7 +3,8 @@ name: Blacklist Stats
 on:
   schedule:
     - cron: '10 * * * *'  # Run every hour
-    
+  workflow_dispatch: # allows to manually trigger the workflow
+
 jobs:
   generate_stats:
     runs-on: ubuntu-latest
@@ -24,8 +25,12 @@ jobs:
           pip install requests
 
       - name: Run blacklist stats script
+        id: run_stats
         run: |
-          python3 stats.py > stats.md
+          python3 stats.py
+          echo "stats_output<<EOF" >> $GITHUB_OUTPUT
+          cat stats.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Commit and push stats.md
         uses: EndBug/add-and-commit@v9
@@ -34,3 +39,10 @@ jobs:
           author_email: "actions@github.com"
           message: "Update stats.md"
           add: "stats.md"
+        
+      - name: Create or update the stats comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+           issue-number: 1 # Replace with the actual issue number if needed
+           body: |
+             ${{ steps.run_stats.outputs.stats_output }}
