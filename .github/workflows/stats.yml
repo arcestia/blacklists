@@ -41,7 +41,7 @@ jobs:
           add: "stats.md"
         
       - name: Create or update the stats comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
            issue-number: 1 # Replace with the actual issue number if needed
            body: |
