@@ -2,11 +2,14 @@ import os
 import requests
 from collections import Counter
 import subprocess
+import re
 
 # Configuration
 LATEST_BLACKLIST_URL = "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt"
 BLACKLIST_FILE = "blacklist.txt"
 PREVIOUS_FILE = "previous_blacklist.txt"
+OUTPUT_FILE = "stats.md"
+
 
 def download_blacklist(url, output_file):
     """Download the latest blacklist from the URL."""
@@ -42,7 +45,7 @@ def get_previous_blacklist(output_file):
         # Try to get the previous version
         subprocess.run(
             ["git", "show", "HEAD~1:" + BLACKLIST_FILE],
-            stdout=open(output_file, 'w'),
+            stdout=open(output_file, 'w', encoding="utf-8"),
             stderr=subprocess.PIPE,
             check=True
         )
@@ -64,6 +67,7 @@ def load_blacklist(file_path):
         with open(file_path, 'r', encoding='latin-1') as f:
             return {line.strip() for line in f if line.strip()}
 
+
 def calculate_stats(current, previous):
     """Calculate statistics between the current and previous blacklists."""
     stats = {
@@ -75,17 +79,19 @@ def calculate_stats(current, previous):
     }
     return stats
 
-def display_stats(stats):
-    """Display statistics in the terminal."""
-    print("\n=== Blacklist Statistics ===")
-    print(f"Total Domains: {stats['total_domains']:,}")
-    print(f"Unique Domains: {stats['unique_domains']:,}")
-    print(f"Added Domains Since Last Version: {stats['added_domains']:,}")
-    print(f"Removed Domains Since Last Version: {stats['removed_domains']:,}")
+
+def format_stats_as_markdown(stats):
+    """Format statistics as a Markdown string."""
+    output = "## Blacklist Statistics\n\n"
+    output += f"- **Total Domains:** {stats['total_domains']:,}\n"
+    output += f"- **Unique Domains:** {stats['unique_domains']:,}\n"
+    output += f"- **Added Domains Since Last Version:** {stats['added_domains']:,}\n"
+    output += f"- **Removed Domains Since Last Version:** {stats['removed_domains']:,}\n"
     
-    print("\nTop-Level Domain Distribution:")
+    output += "\n### Top-Level Domain Distribution\n\n"
     for tld, count in stats['tld_distribution'].most_common(10):
-        print(f"  .{tld}: {count:,}")
+        output += f"-  `.{tld}`: {count:,}\n"
+    return output
 
 def ensure_latest_commits():
     """Fetch the latest two commits to ensure the repository is up-to-date."""
@@ -97,6 +103,7 @@ def ensure_latest_commits():
     except subprocess.CalledProcessError as e:
         print(f"Warning: Error fetching commits: {e}")
         # Continue execution even if fetch fails
+
 
 def main():
     # Step 1: Fetch the latest commits
@@ -115,8 +122,14 @@ def main():
     # Step 5: Calculate stats
     stats = calculate_stats(current_blacklist, previous_blacklist)
     
-    # Step 6: Display stats
-    display_stats(stats)
+    # Step 6: Format stats as markdown
+    markdown_output = format_stats_as_markdown(stats)
+        
+    # Step 7: Write markdown output to a file
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write(markdown_output)
+    print(f"Stats saved to {OUTPUT_FILE}")
+
 
 if __name__ == "__main__":
     main()
