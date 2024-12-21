@@ -1,8 +1,8 @@
 ## Blacklist Statistics
 
-- **Total Domains:** 3,101,448
-- **Unique Domains:** 3,101,448
-- **Added Domains Since Last Version:** 334,947
+- **Total Domains:** 3,101,447
+- **Unique Domains:** 3,101,447
+- **Added Domains Since Last Version:** 334,946
 - **Removed Domains Since Last Version:** 255,415
 
 ### Top-Level Domain Distribution
@@ -16,4 +16,4 @@
 -  `.io`: 60,882
 -  `.info`: 53,387
 -  `.pl`: 49,512
--  `.fr`: 41,391
+-  `.fr`: 41,390
