@@ -7,7 +7,7 @@
 
 ### Top-Level Domain Distribution
 
--  `.com`: 1,467,120
+-  `.com`: 1,467,121
 -  `.org`: 249,893
 -  `.net`: 207,304
 -  `.top`: 81,151
