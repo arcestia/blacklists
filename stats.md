@@ -1,8 +1,8 @@
 ## Blacklist Statistics
 
-- **Total Domains:** 3,232,402
-- **Unique Domains:** 3,232,402
-- **Added Domains Since Last Version:** 459,542
+- **Total Domains:** 3,232,406
+- **Unique Domains:** 3,232,406
+- **Added Domains Since Last Version:** 459,546
 - **Removed Domains Since Last Version:** 249,056
 
 ### Top-Level Domain Distribution
@@ -15,5 +15,5 @@
 -  `.ru`: 72,256
 -  `.io`: 61,148
 -  `.info`: 55,803
--  `.pl`: 49,718
--  `.shop`: 43,981
+-  `.pl`: 49,719
+-  `.shop`: 43,982
