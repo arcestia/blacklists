@@ -1,19 +1,19 @@
 ## Blacklist Statistics
 
-- **Total Domains:** 2,584,412
-- **Unique Domains:** 2,584,412
-- **Added Domains Since Last Version:** 565,173
-- **Removed Domains Since Last Version:** 1,002,677
+- **Total Domains:** 2,584,484
+- **Unique Domains:** 2,584,484
+- **Added Domains Since Last Version:** 565,247
+- **Removed Domains Since Last Version:** 1,002,679
 
 ### Top-Level Domain Distribution
 
--  `.com`: 1,185,975
+-  `.com`: 1,186,000
 -  `.org`: 222,261
--  `.net`: 165,026
--  `.top`: 76,243
--  `.xyz`: 58,186
--  `.shop`: 56,786
+-  `.net`: 165,030
+-  `.top`: 76,217
+-  `.xyz`: 58,189
+-  `.shop`: 56,792
 -  `.ru`: 55,884
 -  `.io`: 54,513
--  `.pl`: 48,254
--  `.info`: 45,611
+-  `.pl`: 48,271
+-  `.info`: 45,612
