@@ -2,12 +2,12 @@
 
 - **Total Domains:** 2,798,869
 - **Unique Domains:** 2,798,869
-- **Added Domains Since Last Version:** 785,163
-- **Removed Domains Since Last Version:** 1,008,210
+- **Added Domains Since Last Version:** 785,164
+- **Removed Domains Since Last Version:** 1,008,211
 
 ### Top-Level Domain Distribution
 
--  `.com`: 1,239,236
+-  `.com`: 1,239,237
 -  `.org`: 235,814
 -  `.net`: 172,808
 -  `.top`: 87,722
