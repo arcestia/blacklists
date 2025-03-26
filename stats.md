@@ -2,8 +2,8 @@
 
 - **Total Domains:** 2,989,361
 - **Unique Domains:** 2,989,361
-- **Added Domains Since Last Version:** 961,902
-- **Removed Domains Since Last Version:** 994,457
+- **Added Domains Since Last Version:** 961,903
+- **Removed Domains Since Last Version:** 994,458
 
 ### Top-Level Domain Distribution
 
