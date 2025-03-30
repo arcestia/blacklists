@@ -1,8 +1,8 @@
 ## Blacklist Statistics
 
-- **Total Domains:** 2,999,464
-- **Unique Domains:** 2,999,464
-- **Added Domains Since Last Version:** 975,574
+- **Total Domains:** 2,999,465
+- **Unique Domains:** 2,999,465
+- **Added Domains Since Last Version:** 975,575
 - **Removed Domains Since Last Version:** 998,026
 
 ### Top-Level Domain Distribution
